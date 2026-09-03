@@ -20,7 +20,7 @@ no composite m < n exists. The other 100 are
 2700, 2862, 2970, 2972, 3042, 3540, 3542, 4290, 4974, 5418, 5420, 5852, 5862, 5880, 5882, 8742,
 267672, 267680.
 
-So F(n) > n for every n with 267680 < n <= 10^11. Every exception is of the form q + 1 with q prime,
+So F(n) > n for every n with 267680 < n <= 10^11. Every exception n > 4 is of the form q + 1 with q prime,
 as predicted by the reduction posted by the commenter CKS on Terence Tao's blog post about this
 problem (August 2024), who also reported the values 8742, 267672 and 267680.
 
