@@ -1,0 +1,24 @@
+k=1 S=0 greedy=0 window=0 nopt=1 secs=0.0
+  tuple: 0
+k=2 S=2 greedy=2 window=2 nopt=1 secs=0.0
+  tuple: 0 2
+k=3 S=8 greedy=8 window=7 nopt=1 secs=0.0
+  tuple: 0 2 6
+k=4 S=16 greedy=16 window=13 nopt=1 secs=0.0
+  tuple: 0 2 6 8
+k=5 S=28 greedy=28 window=22 nopt=1 secs=0.0
+  tuple: 0 2 6 8 12
+k=6 S=46 greedy=46 window=36 nopt=1 secs=0.0
+  tuple: 0 2 6 8 12 18
+k=7 S=66 greedy=66 window=51 nopt=1 secs=0.1
+  tuple: 0 2 6 8 12 18 20
+k=8 S=92 greedy=92 window=71 nopt=1 secs=0.5
+  tuple: 0 2 6 8 12 18 20 26
+k=9 S=122 greedy=122 window=94 nopt=1 secs=3.3
+  tuple: 0 2 6 8 12 18 20 26 30
+k=10 S=154 greedy=154 window=118 nopt=1 secs=8.6
+  tuple: 0 2 6 8 12 18 20 26 30 32
+k=11 S=190 greedy=190 window=145 nopt=1 secs=45.4
+  tuple: 0 2 6 8 12 18 20 26 30 32 36
+k=12 S=232 greedy=232 window=177 nopt=1 secs=124.9
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42

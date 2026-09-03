@@ -1,0 +1,266 @@
+W 3: 3
+3 1 n=0 nodes=0 splitnodes=0 secs=0.00
+W 7: 3 7
+7 2 n=1 nodes=1 splitnodes=17 secs=0.00
+11 2 n=1 nodes=0 splitnodes=0 secs=0.00
+15 2 n=2 nodes=0 splitnodes=1 secs=0.00
+W 19: 3 11 19
+19 3 n=4 nodes=2 splitnodes=17 secs=0.00
+W 23: 3 11 19 23
+23 4 n=5 nodes=3 splitnodes=17 secs=0.00
+31 4 n=4 nodes=0 splitnodes=1 secs=0.00
+35 4 n=5 nodes=0 splitnodes=1 secs=0.00
+W 39: 3 7 31 35 39
+39 5 n=6 nodes=4 splitnodes=18 secs=0.00
+43 5 n=7 nodes=0 splitnodes=3 secs=0.00
+47 5 n=7 nodes=0 splitnodes=1 secs=0.00
+51 5 n=8 nodes=0 splitnodes=1 secs=0.00
+W 55: 3 7 19 23 39 55
+55 6 n=10 nodes=5 splitnodes=21 secs=0.00
+W 59: 11 15 19 23 51 55 59
+59 7 n=11 nodes=6 splitnodes=18 secs=0.00
+67 7 n=11 nodes=0 splitnodes=1 secs=0.00
+71 7 n=13 nodes=0 splitnodes=5 secs=0.00
+79 7 n=12 nodes=0 splitnodes=1 secs=0.00
+83 7 n=12 nodes=0 splitnodes=3 secs=0.00
+W 87: 7 15 23 51 55 59 79 87
+87 8 n=15 nodes=7 splitnodes=35 secs=0.00
+91 8 n=15 nodes=0 splitnodes=9 secs=0.00
+95 8 n=16 nodes=0 splitnodes=6 secs=0.00
+103 8 n=17 nodes=0 splitnodes=30 secs=0.00
+W 107: 11 23 35 47 59 71 83 95 107
+107 9 n=18 nodes=8 splitnodes=25 secs=0.00
+W 111: 11 23 35 47 59 71 83 95 107 111
+111 10 n=19 nodes=9 splitnodes=20 secs=0.00
+115 10 n=20 nodes=0 splitnodes=15 secs=0.00
+W 119: 11 23 35 47 59 71 83 95 107 111 119
+119 11 n=20 nodes=10 splitnodes=20 secs=0.00
+123 11 n=22 nodes=0 splitnodes=15 secs=0.00
+127 11 n=21 nodes=0 splitnodes=5 secs=0.00
+W 131: 7 15 23 51 59 79 87 95 107 115 123 131
+131 12 n=22 nodes=11 splitnodes=21 secs=0.00
+139 12 n=22 nodes=0 splitnodes=1 secs=0.00
+143 12 n=24 nodes=0 splitnodes=5 secs=0.00
+W 151: 7 15 23 51 59 79 87 95 107 115 123 131 151
+151 13 n=25 nodes=12 splitnodes=26 secs=0.00
+155 13 n=24 nodes=0 splitnodes=3 secs=0.00
+W 159: 7 15 23 51 59 79 87 95 107 115 123 131 151 159
+159 14 n=28 nodes=13 splitnodes=26 secs=0.00
+163 14 n=27 nodes=0 splitnodes=3 secs=0.00
+W 167: 7 15 23 51 59 79 87 95 107 115 123 131 151 159 167
+167 15 n=29 nodes=14 splitnodes=21 secs=0.00
+179 15 n=28 nodes=0 splitnodes=1 secs=0.00
+183 15 n=27 nodes=0 splitnodes=1 secs=0.00
+187 15 n=29 nodes=0 splitnodes=5 secs=0.00
+191 15 n=29 nodes=0 splitnodes=1 secs=0.00
+W 195: 7 15 23 51 59 79 87 95 107 115 123 131 151 159 167 195
+195 16 n=32 nodes=15 splitnodes=21 secs=0.00
+199 16 n=31 nodes=0 splitnodes=3 secs=0.00
+W 203: 7 15 23 51 59 79 87 95 107 115 123 131 151 159 167 195 203
+203 17 n=35 nodes=16 splitnodes=21 secs=0.00
+211 17 n=32 nodes=0 splitnodes=4 secs=0.00
+215 17 n=35 nodes=0 splitnodes=1 secs=0.00
+219 17 n=35 nodes=0 splitnodes=1 secs=0.00
+223 17 n=36 nodes=0 splitnodes=5 secs=0.00
+227 17 n=35 nodes=0 splitnodes=1 secs=0.00
+231 17 n=39 nodes=15 splitnodes=47 secs=0.00
+235 17 n=38 nodes=0 splitnodes=7 secs=0.00
+W 239: 7 15 23 51 59 79 87 95 123 131 159 167 187 195 203 223 231 239
+239 18 n=41 nodes=17 splitnodes=25 secs=0.00
+247 18 n=40 nodes=0 splitnodes=6 secs=0.00
+251 18 n=42 nodes=2 splitnodes=27 secs=0.00
+255 18 n=42 nodes=0 splitnodes=1 secs=0.00
+W 259: 7 15 23 51 59 71 87 95 107 115 131 151 159 167 195 203 215 239 259
+259 19 n=43 nodes=21 splitnodes=26 secs=0.00
+263 19 n=44 nodes=0 splitnodes=5 secs=0.00
+267 19 n=47 nodes=10 splitnodes=31 secs=0.00
+271 19 n=46 nodes=0 splitnodes=11 secs=0.00
+283 19 n=47 nodes=0 splitnodes=6 secs=0.00
+287 19 n=47 nodes=0 splitnodes=17 secs=0.00
+291 19 n=46 nodes=0 splitnodes=6 secs=0.00
+295 19 n=48 nodes=4 splitnodes=39 secs=0.00
+299 19 n=49 nodes=0 splitnodes=18 secs=0.00
+W 303: 7 15 23 51 59 79 87 95 115 123 131 151 159 167 203 231 239 267 295 303
+303 20 n=52 nodes=19 splitnodes=43 secs=0.00
+W 307: 7 15 23 51 59 79 87 95 115 123 131 151 159 167 203 231 239 267 295 303 307
+307 21 n=52 nodes=20 splitnodes=40 secs=0.00
+311 21 n=54 nodes=0 splitnodes=6 secs=0.00
+319 21 n=54 nodes=0 splitnodes=6 secs=0.00
+323 21 n=54 nodes=0 splitnodes=9 secs=0.00
+327 21 n=53 nodes=0 splitnodes=3 secs=0.00
+331 21 n=54 nodes=0 splitnodes=5 secs=0.00
+335 21 n=56 nodes=0 splitnodes=15 secs=0.00
+339 21 n=58 nodes=0 splitnodes=21 secs=0.00
+347 21 n=58 nodes=0 splitnodes=8 secs=0.00
+355 21 n=60 nodes=0 splitnodes=14 secs=0.00
+359 21 n=60 nodes=0 splitnodes=20 secs=0.00
+367 21 n=58 nodes=0 splitnodes=36 secs=0.00
+371 21 n=62 nodes=0 splitnodes=34 secs=0.00
+379 21 n=61 nodes=0 splitnodes=14 secs=0.00
+383 21 n=62 nodes=0 splitnodes=17 secs=0.00
+391 21 n=62 nodes=0 splitnodes=18 secs=0.00
+395 21 n=62 nodes=0 splitnodes=59 secs=0.00
+399 21 n=64 nodes=0 splitnodes=13 secs=0.00
+W 403: 7 15 23 51 59 71 107 115 131 151 159 167 203 215 251 259 295 303 311 367 395 403
+403 22 n=65 nodes=25 splitnodes=61 secs=0.00
+407 22 n=68 nodes=0 splitnodes=45 secs=0.00
+411 22 n=69 nodes=0 splitnodes=41 secs=0.00
+415 22 n=68 nodes=0 splitnodes=13 secs=0.00
+419 22 n=68 nodes=4 splitnodes=65 secs=0.00
+427 22 n=69 nodes=0 splitnodes=38 secs=0.00
+431 22 n=69 nodes=0 splitnodes=127 secs=0.00
+435 22 n=70 nodes=6 splitnodes=81 secs=0.00
+439 22 n=69 nodes=0 splitnodes=47 secs=0.00
+443 22 n=73 nodes=11 splitnodes=130 secs=0.00
+447 22 n=75 nodes=0 splitnodes=299 secs=0.00
+W 451: 7 15 23 59 79 95 115 131 151 159 167 203 231 239 267 295 303 367 379 403 415 439 451
+451 23 n=74 nodes=22 splitnodes=91 secs=0.00
+455 23 n=74 nodes=0 splitnodes=41 secs=0.00
+463 23 n=76 nodes=0 splitnodes=85 secs=0.00
+467 23 n=75 nodes=0 splitnodes=241 secs=0.00
+471 23 n=77 nodes=0 splitnodes=99 secs=0.00
+479 23 n=79 nodes=0 splitnodes=233 secs=0.00
+483 23 n=79 nodes=2 splitnodes=359 secs=0.00
+487 23 n=79 nodes=10 splitnodes=157 secs=0.00
+491 23 n=81 nodes=0 splitnodes=513 secs=0.00
+W 499: 31 35 71 87 123 139 159 195 231 247 283 287 299 323 335 339 359 371 395 407 431 447 483 499
+499 24 n=81 nodes=26 splitnodes=235 secs=0.00
+503 24 n=83 nodes=0 splitnodes=334 secs=0.00
+511 24 n=81 nodes=0 splitnodes=74 secs=0.00
+515 24 n=85 nodes=8 splitnodes=560 secs=0.00
+519 24 n=87 nodes=78 splitnodes=1061 secs=0.00
+523 24 n=84 nodes=0 splitnodes=148 secs=0.00
+527 24 n=85 nodes=60 splitnodes=453 secs=0.00
+W 535: 31 35 71 87 123 139 159 195 231 247 283 287 299 323 335 339 359 371 395 407 431 447 483 499 535
+535 25 n=84 nodes=44 splitnodes=385 secs=0.00
+543 25 n=85 nodes=0 splitnodes=144 secs=0.00
+547 25 n=85 nodes=0 splitnodes=129 secs=0.00
+551 25 n=91 nodes=45 splitnodes=957 secs=0.00
+555 25 n=92 nodes=352 splitnodes=1309 secs=0.00
+559 25 n=88 nodes=0 splitnodes=194 secs=0.00
+563 25 n=91 nodes=0 splitnodes=413 secs=0.00
+W 571: 31 35 71 87 123 139 159 195 231 247 283 287 299 323 335 339 359 371 395 407 431 447 483 499 535 571
+571 26 n=91 nodes=246 splitnodes=517 secs=0.00
+579 26 n=92 nodes=0 splitnodes=125 secs=0.00
+583 26 n=93 nodes=0 splitnodes=230 secs=0.00
+587 26 n=95 nodes=103 splitnodes=674 secs=0.00
+591 26 n=98 nodes=551 splitnodes=1629 secs=0.00
+595 26 n=95 nodes=6 splitnodes=381 secs=0.00
+599 26 n=97 nodes=27 splitnodes=683 secs=0.00
+W 607: 71 87 103 107 123 159 195 211 283 287 299 303 319 323 335 359 371 395 411 483 499 503 519 535 571 587 607
+607 27 n=97 nodes=109 splitnodes=445 secs=0.00
+W 611: 71 87 103 107 123 159 195 211 283 287 299 303 319 323 335 359 371 395 411 483 499 503 519 535 571 587 607 611
+611 28 n=97 nodes=44 splitnodes=66 secs=0.00
+615 28 n=97 nodes=0 splitnodes=60 secs=0.00
+619 28 n=98 nodes=0 splitnodes=238 secs=0.00
+623 28 n=100 nodes=0 splitnodes=305 secs=0.00
+627 28 n=103 nodes=81 splitnodes=722 secs=0.00
+631 28 n=100 nodes=0 splitnodes=55 secs=0.00
+635 28 n=103 nodes=0 splitnodes=355 secs=0.00
+643 28 n=102 nodes=20 splitnodes=461 secs=0.00
+647 28 n=102 nodes=4 splitnodes=435 secs=0.00
+651 28 n=105 nodes=0 splitnodes=215 secs=0.00
+655 28 n=104 nodes=0 splitnodes=257 secs=0.00
+W 659: 71 87 103 107 123 159 195 211 283 287 299 303 319 323 335 359 371 395 411 483 499 503 519 535 571 587 607 611 659
+659 29 n=105 nodes=28 splitnodes=123 secs=0.00
+663 29 n=110 nodes=51 splitnodes=770 secs=0.00
+667 29 n=107 nodes=0 splitnodes=233 secs=0.00
+671 29 n=112 nodes=0 splitnodes=758 secs=0.00
+679 29 n=109 nodes=33 splitnodes=476 secs=0.00
+683 29 n=110 nodes=3 splitnodes=897 secs=0.00
+687 29 n=112 nodes=0 splitnodes=350 secs=0.00
+691 29 n=112 nodes=0 splitnodes=395 secs=0.00
+695 29 n=113 nodes=10 splitnodes=1210 secs=0.00
+699 29 n=119 nodes=689 splitnodes=2132 secs=0.01
+703 29 n=118 nodes=179 splitnodes=1330 secs=0.00
+707 29 n=119 nodes=7 splitnodes=2266 secs=0.01
+W 715: 15 19 51 55 67 91 103 119 127 155 163 263 267 303 307 355 391 407 411 427 479 515 519 551 555 591 627 663 679 715
+715 30 n=119 nodes=102 splitnodes=807 secs=0.00
+W 719: 15 51 67 103 119 143 155 179 215 251 263 267 303 319 355 391 411 427 443 479 503 515 519 551 591 627 643 663 679 715 719
+719 31 n=117 nodes=181 splitnodes=751 secs=0.00
+723 31 n=119 nodes=0 splitnodes=257 secs=0.00
+727 31 n=120 nodes=0 splitnodes=367 secs=0.00
+731 31 n=119 nodes=0 splitnodes=1269 secs=0.00
+739 31 n=123 nodes=0 splitnodes=1398 secs=0.00
+743 31 n=125 nodes=0 splitnodes=1295 secs=0.00
+751 31 n=124 nodes=15 splitnodes=1005 secs=0.00
+755 31 n=124 nodes=0 splitnodes=899 secs=0.00
+759 31 n=126 nodes=25 splitnodes=1037 secs=0.00
+763 31 n=126 nodes=26 splitnodes=1295 secs=0.00
+767 31 n=126 nodes=103 splitnodes=2172 secs=0.01
+771 31 n=131 nodes=75 splitnodes=3365 secs=0.01
+779 31 n=130 nodes=130 splitnodes=2544 secs=0.01
+W 787: 15 67 87 107 119 179 191 195 211 215 267 287 303 391 395 407 411 479 499 503 519 587 591 611 627 679 695 699 715 719 767 787
+787 32 n=130 nodes=219 splitnodes=1662 secs=0.01
+791 32 n=130 nodes=0 splitnodes=899 secs=0.00
+795 32 n=131 nodes=103 splitnodes=1068 secs=0.00
+799 32 n=132 nodes=28 splitnodes=1533 secs=0.01
+803 32 n=133 nodes=228 splitnodes=2335 secs=0.01
+W 807: 15 67 87 107 119 179 191 195 211 215 267 287 303 391 395 407 411 479 499 503 519 587 591 611 627 679 695 699 715 719 767 787 807
+807 33 n=137 nodes=306 splitnodes=1219 secs=0.00
+811 33 n=135 nodes=0 splitnodes=1321 secs=0.00
+815 33 n=138 nodes=128 splitnodes=1838 secs=0.01
+823 33 n=136 nodes=74 splitnodes=2106 secs=0.01
+W 827: 15 67 87 107 119 179 191 195 211 215 267 287 303 391 395 407 411 479 499 503 519 587 591 611 627 679 695 699 715 719 767 787 807 827
+827 34 n=136 nodes=219 splitnodes=506 secs=0.00
+831 34 n=138 nodes=11 splitnodes=816 secs=0.00
+835 34 n=137 nodes=0 splitnodes=614 secs=0.00
+839 34 n=137 nodes=0 splitnodes=1355 secs=0.00
+843 34 n=140 nodes=0 splitnodes=1289 secs=0.00
+851 34 n=139 nodes=0 splitnodes=1134 secs=0.00
+859 34 n=137 nodes=0 splitnodes=1229 secs=0.00
+863 34 n=141 nodes=28 splitnodes=937 secs=0.00
+871 34 n=139 nodes=0 splitnodes=1030 secs=0.00
+879 34 n=143 nodes=0 splitnodes=1479 secs=0.01
+883 34 n=143 nodes=0 splitnodes=1623 secs=0.01
+887 34 n=144 nodes=0 splitnodes=1356 secs=0.01
+895 34 n=142 nodes=44 splitnodes=1542 secs=0.01
+899 34 n=145 nodes=24 splitnodes=1620 secs=0.01
+903 34 n=147 nodes=0 splitnodes=1608 secs=0.01
+907 34 n=147 nodes=0 splitnodes=1689 secs=0.01
+W 911: 15 67 87 107 119 179 191 195 211 215 267 287 303 391 395 407 411 479 499 503 519 587 591 611 627 679 695 699 715 719 767 787 807 827 911
+911 35 n=147 nodes=87 splitnodes=1320 secs=0.00
+915 35 n=152 nodes=134 splitnodes=2601 secs=0.01
+919 35 n=149 nodes=0 splitnodes=2050 secs=0.01
+923 35 n=149 nodes=0 splitnodes=1981 secs=0.01
+935 35 n=150 nodes=0 splitnodes=1159 secs=0.00
+939 35 n=149 nodes=0 splitnodes=1293 secs=0.01
+943 35 n=150 nodes=0 splitnodes=1348 secs=0.01
+947 35 n=149 nodes=43 splitnodes=2250 secs=0.01
+951 35 n=155 nodes=35 splitnodes=1971 secs=0.01
+955 35 n=154 nodes=26 splitnodes=2669 secs=0.01
+959 35 n=157 nodes=3 splitnodes=3642 secs=0.01
+967 35 n=152 nodes=24 splitnodes=1321 secs=0.01
+971 35 n=156 nodes=257 splitnodes=2237 secs=0.01
+979 35 n=154 nodes=2 splitnodes=1698 secs=0.01
+983 35 n=155 nodes=104 splitnodes=3732 secs=0.01
+987 35 n=162 nodes=47 splitnodes=4557 secs=0.02
+991 35 n=158 nodes=155 splitnodes=2560 secs=0.01
+995 35 n=162 nodes=155 splitnodes=5190 secs=0.02
+W 1003: 71 83 87 107 191 195 215 283 287 303 319 371 391 395 411 483 503 515 519 551 571 587 591 607 611 627 715 719 803 807 827 895 911 915 983 1003
+1003 36 n=160 nodes=212 splitnodes=1488 secs=0.01
+1007 36 n=161 nodes=34 splitnodes=1883 secs=0.01
+1011 36 n=161 nodes=4 splitnodes=1229 secs=0.01
+1015 36 n=164 nodes=16 splitnodes=3489 secs=0.01
+1019 36 n=162 nodes=241 splitnodes=4266 secs=0.02
+1023 36 n=168 nodes=709 splitnodes=5247 secs=0.02
+1027 36 n=164 nodes=274 splitnodes=3562 secs=0.02
+1031 36 n=166 nodes=431 splitnodes=5281 secs=0.02
+1039 36 n=163 nodes=47 splitnodes=2820 secs=0.01
+1043 36 n=168 nodes=20 splitnodes=3777 secs=0.02
+1047 36 n=167 nodes=0 splitnodes=1978 secs=0.01
+1051 36 n=169 nodes=109 splitnodes=4072 secs=0.02
+W 1055: 31 35 51 71 139 143 159 227 231 247 251 335 339 359 371 427 447 463 483 535 555 571 647 659 663 683 731 751 755 771 843 859 863 947 971 1039 1055
+1055 37 n=168 nodes=115 splitnodes=2223 secs=0.01
+1059 37 n=175 nodes=147 splitnodes=5719 secs=0.02
+1063 37 n=173 nodes=120 splitnodes=4419 secs=0.02
+W 1067: 15 23 51 59 87 95 123 159 195 231 267 303 339 379 407 415 451 479 487 515 523 551 559 587 595 851 879 887 915 923 951 959 987 995 1023 1031 1059 1067
+1067 38 n=174 nodes=141 splitnodes=1401 secs=0.01
+1079 38 n=176 nodes=0 splitnodes=2087 secs=0.01
+1087 38 n=175 nodes=139 splitnodes=2721 secs=0.01
+1091 38 n=174 nodes=8 splitnodes=3297 secs=0.01
+1095 38 n=182 nodes=274 splitnodes=7384 secs=0.03
+1099 38 n=177 nodes=117 splitnodes=4332 secs=0.02
+W 1103: 15 23 51 59 87 95 123 131 159 195 231 267 303 339 379 407 415 451 479 487 515 523 551 559 851 879 887 915 923 951 959 987 995 1023 1031 1059 1067 1095 1103
+1103 39 n=181 nodes=193 splitnodes=2423 secs=0.01
+DONE

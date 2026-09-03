@@ -1,0 +1,40 @@
+k=1 S=0 greedy=0 window=0 nopt=1 secs=0.0
+  tuple: 0
+k=2 S=2 greedy=2 window=2 nopt=1 secs=0.0
+  tuple: 0 2
+k=3 S=8 greedy=8 window=6 nopt=1 secs=0.0
+  tuple: 0 2 6
+k=4 S=16 greedy=16 window=8 nopt=1 secs=0.0
+  tuple: 0 2 6 8
+k=5 S=28 greedy=28 window=12 nopt=1 secs=0.0
+  tuple: 0 2 6 8 12
+k=6 S=46 greedy=46 window=18 nopt=1 secs=0.0
+  tuple: 0 2 6 8 12 18
+k=7 S=66 greedy=66 window=20 nopt=1 secs=0.0
+  tuple: 0 2 6 8 12 18 20
+k=8 S=92 greedy=92 window=26 nopt=1 secs=0.0
+  tuple: 0 2 6 8 12 18 20 26
+k=9 S=122 greedy=122 window=30 nopt=1 secs=0.0
+  tuple: 0 2 6 8 12 18 20 26 30
+k=10 S=154 greedy=154 window=32 nopt=1 secs=0.1
+  tuple: 0 2 6 8 12 18 20 26 30 32
+k=11 S=190 greedy=190 window=36 nopt=1 secs=0.0
+  tuple: 0 2 6 8 12 18 20 26 30 32 36
+k=12 S=232 greedy=232 window=42 nopt=1 secs=0.3
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42
+k=13 S=280 greedy=280 window=48 nopt=1 secs=0.4
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48
+k=14 S=330 greedy=330 window=50 nopt=1 secs=0.3
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50
+k=15 S=386 greedy=386 window=56 nopt=1 secs=0.7
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56
+k=16 S=448 greedy=448 window=62 nopt=1 secs=5.5
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62
+k=17 S=516 greedy=516 window=68 nopt=1 secs=11.8
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62 68
+k=18 S=588 greedy=588 window=72 nopt=1 secs=20.6
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62 68 72
+k=19 S=666 greedy=666 window=78 nopt=1 secs=24.7
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62 68 72 78
+k=20 S=752 greedy=752 window=86 nopt=1 secs=477.9
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62 68 72 78 86

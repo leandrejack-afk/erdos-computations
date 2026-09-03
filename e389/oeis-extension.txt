@@ -1,0 +1,31 @@
+OEIS A375071 extension
+=======================
+
+Sequence: Smallest k such that Product_{i=1..k} (n+i) divides
+Product_{i=1..k} (n+k+i), or 0 if there is no such k.
+Offset 0, so index i is problem-n = i+1.
+
+Currently published: a(0)..a(26)  (n = 1..27).
+
+NEW TERMS (both proven minimal by exhaustive search from k=1, cross-checked
+with two independent implementations):
+
+  a(27) = 18253129921815     (n = 28)
+  a(28) = 18253129921814     (n = 29)
+
+--- b-file lines to append (index value) ---
+27 18253129921815
+28 18253129921814
+
+--- extension credit line ---
+a(27)-a(28) from Leandre Jack, Sep 03 2026
+
+Notes for the editor:
+- These two values were previously known only as upper bounds (KentaKitamura,
+  Erdős Problems forum #389, 01 Aug 2026). This submission proves minimality:
+  an exhaustive scan of every k from 1 to the witness finds no smaller k, run
+  independently in a purpose-built C sieve and in Sharvil Kesarwani's published
+  C++ solver, both returning N = n+k-1 = 18253129921842 as the least witness.
+- n = 28 and n = 29 share N = 18253129921842 (they are the pair 2K+2, 2K+3 with
+  K = 13); the divisibility depends only on N and the block length.
+- Verification detail and code: results.md / verify.md in the submission.

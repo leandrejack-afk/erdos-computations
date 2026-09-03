@@ -1,0 +1,81 @@
+k=1 S=0 greedy=0 nopt=1 nodes=1 xlim=1 secs=0.00
+  tuple: 0
+k=2 S=2 greedy=2 nopt=1 nodes=2 xlim=1 secs=0.00
+  tuple: 0 2
+k=3 S=8 greedy=8 nopt=1 nodes=3 xlim=3 secs=0.00
+  tuple: 0 2 6
+k=4 S=16 greedy=16 nopt=1 nodes=4 xlim=4 secs=0.00
+  tuple: 0 2 6 8
+k=5 S=28 greedy=28 nopt=1 nodes=5 xlim=6 secs=0.00
+  tuple: 0 2 6 8 12
+k=6 S=46 greedy=46 nopt=1 nodes=6 xlim=9 secs=0.00
+  tuple: 0 2 6 8 12 18
+k=7 S=66 greedy=66 nopt=1 nodes=7 xlim=10 secs=0.00
+  tuple: 0 2 6 8 12 18 20
+k=8 S=92 greedy=92 nopt=1 nodes=8 xlim=13 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26
+k=9 S=122 greedy=122 nopt=1 nodes=9 xlim=15 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30
+k=10 S=154 greedy=154 nopt=1 nodes=10 xlim=16 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32
+k=11 S=190 greedy=190 nopt=1 nodes=11 xlim=18 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36
+k=12 S=232 greedy=232 nopt=1 nodes=12 xlim=21 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42
+k=13 S=280 greedy=280 nopt=1 nodes=19 xlim=24 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48
+k=14 S=330 greedy=330 nopt=1 nodes=17 xlim=25 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50
+k=15 S=386 greedy=386 nopt=1 nodes=30 xlim=28 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56
+k=16 S=448 greedy=448 nopt=1 nodes=36 xlim=31 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62
+k=17 S=516 greedy=516 nopt=1 nodes=42 xlim=34 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62 68
+k=18 S=588 greedy=588 nopt=1 nodes=43 xlim=36 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62 68 72
+k=19 S=666 greedy=666 nopt=1 nodes=48 xlim=39 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62 68 72 78
+k=20 S=752 greedy=752 nopt=1 nodes=59 xlim=43 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62 68 72 78 86
+k=21 S=842 greedy=842 nopt=1 nodes=82 xlim=45 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62 68 72 78 86 90
+k=22 S=938 greedy=938 nopt=1 nodes=86 xlim=48 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62 68 72 78 86 90 96
+k=23 S=1036 greedy=1036 nopt=1 nodes=94 xlim=49 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62 68 72 78 86 90 96 98
+k=24 S=1138 greedy=1138 nopt=1 nodes=98 xlim=51 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62 68 72 78 86 90 96 98 102
+k=25 S=1248 greedy=1248 nopt=1 nodes=120 xlim=55 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62 68 72 78 86 90 96 98 102 110
+k=26 S=1364 greedy=1364 nopt=1 nodes=145 xlim=58 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62 68 72 78 86 90 96 98 102 110 116
+k=27 S=1484 greedy=1484 nopt=1 nodes=177 xlim=60 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62 68 72 78 86 90 96 98 102 110 116 120
+k=28 S=1612 greedy=1612 nopt=1 nodes=204 xlim=64 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62 68 72 78 86 90 96 98 102 110 116 120 128
+k=29 S=1744 greedy=1744 nopt=1 nodes=223 xlim=66 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62 68 72 78 86 90 96 98 102 110 116 120 128 132
+k=30 S=1882 greedy=1882 nopt=1 nodes=257 xlim=69 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62 68 72 78 86 90 96 98 102 110 116 120 128 132 138
+k=31 S=2022 greedy=2022 nopt=1 nodes=279 xlim=70 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62 68 72 78 86 90 96 98 102 110 116 120 128 132 138 140
+k=32 S=2168 greedy=2168 nopt=1 nodes=305 xlim=73 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62 68 72 78 86 90 96 98 102 110 116 120 128 132 138 140 146
+k=33 S=2320 greedy=2320 nopt=1 nodes=325 xlim=76 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62 68 72 78 86 90 96 98 102 110 116 120 128 132 138 140 146 152
+k=34 S=2476 greedy=2476 nopt=1 nodes=358 xlim=78 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62 68 72 78 86 90 96 98 102 110 116 120 128 132 138 140 146 152 156
+k=35 S=2634 greedy=2634 nopt=1 nodes=372 xlim=79 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62 68 72 78 86 90 96 98 102 110 116 120 128 132 138 140 146 152 156 158
+k=36 S=2796 greedy=2796 nopt=1 nodes=392 xlim=81 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62 68 72 78 86 90 96 98 102 110 116 120 128 132 138 140 146 152 156 158 162
+k=37 S=2964 greedy=2964 nopt=1 nodes=415 xlim=84 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62 68 72 78 86 90 96 98 102 110 116 120 128 132 138 140 146 152 156 158 162 168
+k=38 S=3140 greedy=3140 nopt=1 nodes=434 xlim=88 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62 68 72 78 86 90 96 98 102 110 116 120 128 132 138 140 146 152 156 158 162 168 176
+k=39 S=3322 greedy=3322 nopt=1 nodes=466 xlim=91 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62 68 72 78 86 90 96 98 102 110 116 120 128 132 138 140 146 152 156 158 162 168 176 182
+k=40 S=3508 greedy=3508 nopt=1 nodes=498 xlim=93 secs=0.00
+  tuple: 0 2 6 8 12 18 20 26 30 32 36 42 48 50 56 62 68 72 78 86 90 96 98 102 110 116 120 128 132 138 140 146 152 156 158 162 168 176 182 186
+./smin 40 -s 0  0.00s user 0.00s system 86% cpu 0.004 total
