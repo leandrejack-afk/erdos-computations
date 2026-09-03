@@ -8,6 +8,8 @@ consists entirely of primes exactly when F(n) <= n.
 
 ## Result
 
+The list of such n was already in the OEIS as A322293 (Michel Marcus and Robert Israel, December 2018, verified to 10^8); this computation extends the verified range to 10^11 and finds no further terms.
+
 F(n) <= n holds for exactly 103 values of n <= 10^11. Three of them (n = 2, 3, 4) are trivial, since
 no composite m < n exists. The other 100 are
 
@@ -20,7 +22,7 @@ no composite m < n exists. The other 100 are
 
 So F(n) > n for every n with 267680 < n <= 10^11. Every exception is of the form q + 1 with q prime,
 as predicted by the reduction posted by the commenter CKS on Terence Tao's blog post about this
-problem (August 2024), where the values 8742, 267672 and 267680 were first reported.
+problem (August 2024), who also reported the values 8742, 267672 and 267680.
 
 ## Method and verification
 
