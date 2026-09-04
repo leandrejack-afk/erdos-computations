@@ -27,10 +27,10 @@ out=["| X | M(X) = max gap below X (after prime) | P(X) = max product of consecu
 for X,M,Mp,P,g1,g2,Pp in rows:
     out.append(f"| 10^{len(str(X))-1} | {M} (after {Mp}) | {P} = {g1}*{g2} (middle prime {Pp}) | {P/(M*M):.3f} |")
 out.append("")
-out.append("Record products of two consecutive gaps (product = g1*g2, middle prime = the prime between the two gaps): the last 12 records below 10^11 from the single scan, then, for the parallel segment scans above 10^11, each block maximum that beat the running record:")
+out.append("Record products of two consecutive gaps (product = g1*g2, middle prime = the prime between the two gaps): the last 12 of the 54 records below 10^11 from the single scan (the 54 middle primes are exactly the 54 terms of OEIS A120384), then, for the parallel segment scans above 10^11, each segment maximum that beat the running maximum (segment maxima only, so this is not the complete record sequence above 10^11):")
 out.append("")
 for P,g1,g2,mid in recs[-12:]:
     out.append(f"- {P} = {g1}*{g2}, middle prime {mid}")
 for P,g1,g2,mid,M in segrecs:
-    out.append(f"- {P} = {g1}*{g2}, middle prime {mid} (max gap so far {M}, ratio {P/(M*M):.3f})")
+    out.append(f"- {P} = {g1}*{g2}, middle prime {mid} (segment maximum)")
 print("\n".join(out))

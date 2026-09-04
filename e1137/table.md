@@ -9,7 +9,7 @@
 | 10^12 | 540 (after 738832927927) | 86156 = 238*362 (middle prime 883442069849) | 0.295 |
 | 10^13 | 674 (after 7177162611713) | 127500 = 510*250 (middle prime 5061226833937) | 0.281 |
 
-Record products of two consecutive gaps (product = g1*g2, middle prime = the prime between the two gaps): the last 12 records below 10^11 from the single scan, then, for the parallel segment scans above 10^11, each block maximum that beat the running record:
+Record products of two consecutive gaps (product = g1*g2, middle prime = the prime between the two gaps): the last 12 of the 54 records below 10^11 from the single scan (the 54 middle primes are exactly the 54 terms of OEIS A120384), then, for the parallel segment scans above 10^11, each segment maximum that beat the running maximum (segment maxima only, so this is not the complete record sequence above 10^11):
 
 - 27216 = 168*162, middle prime 1791752797
 - 28800 = 240*120, middle prime 2390311379
@@ -23,10 +23,10 @@ Record products of two consecutive gaps (product = g1*g2, middle prime = the pri
 - 46200 = 220*210, middle prime 15318488291
 - 48216 = 246*196, middle prime 24016237123
 - 62160 = 222*280, middle prime 31587561361
-- 65436 = 246*266, middle prime 138465682247 (max gap so far 474, ratio 0.291)
-- 81320 = 214*380, middle prime 220578150113 (max gap so far 490, ratio 0.339)
-- 85860 = 318*270, middle prime 633880576177 (max gap so far 534, ratio 0.301)
-- 86156 = 238*362, middle prime 883442069849 (max gap so far 540, ratio 0.295)
-- 109296 = 414*264, middle prime 1032148488557 (max gap so far 588, ratio 0.316)
-- 115056 = 408*282, middle prime 3605572653889 (max gap so far 652, ratio 0.271)
-- 127500 = 510*250, middle prime 5061226833937 (max gap so far 652, ratio 0.300)
+- 65436 = 246*266, middle prime 138465682247 (segment maximum)
+- 81320 = 214*380, middle prime 220578150113 (segment maximum)
+- 85860 = 318*270, middle prime 633880576177 (segment maximum)
+- 86156 = 238*362, middle prime 883442069849 (segment maximum)
+- 109296 = 414*264, middle prime 1032148488557 (segment maximum)
+- 115056 = 408*282, middle prime 3605572653889 (segment maximum)
+- 127500 = 510*250, middle prime 5061226833937 (segment maximum)

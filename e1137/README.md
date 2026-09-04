@@ -23,11 +23,14 @@ pair of consecutive gaps is identified by its middle prime, the prime between th
 | 10^13 | 674 (after 7177162611713) | 127500 = 510 * 250 (5061226833937) | 0.281 |
 
 `table.md` is the same table with the list of record products. Below 10^11 the log holds every
-record-breaking product (54 `RECORD PROD` lines in `logs/gaps_1e13.log`, the last twelve of which
-are listed in `table.md`). Above 10^11 only the maximum of each segment was recorded, and `table.md`
-lists the segment maxima that beat the running record; that list is therefore not the complete
-record sequence above 10^11, while P(X) at X = 10^12 and 10^13 is exact (it is the maximum over
-the segments). Nothing is claimed beyond 10^13.
+record-breaking product (54 `RECORD PROD` lines in `logs/gaps_1e13.log`). Their middle primes are
+exactly the 54 terms of OEIS A120384 (Ken Takusagawa, 2006: primes at which the geometric mean of
+the two neighbouring gaps sets a record, which is the same event as a record product), term for
+term, ending at 31587561361; `table.md` lists the last twelve. So the record sequence below 10^11
+was already in the OEIS, and this folder confirms it. Above 10^11 only the maximum of each segment
+was recorded, and `table.md` lists the segment maxima that beat the running maximum; that list is
+therefore not the complete record sequence above 10^11, while P(X) at X = 10^12 and 10^13 is exact
+(it is the maximum over the segments). Nothing is claimed beyond 10^13.
 
 ## Method
 
@@ -65,8 +68,13 @@ Checks run on 2026-09-04, before posting:
   reproduces the log rows to 10^9 verbatim (0.3 s).
 - The ratios recompute from the M and P columns; `python3 mk1137.py` regenerates `table.md`
   byte for byte.
-- An adversarial review with fresh context, which recomputed the rows with its own scanner, is in
-  `REVIEW.md`.
+- An adversarial review with fresh context (`REVIEW.md`, 2026-09-04) reproduced every row from 10^6
+  to 10^11 with its own scanner, re-scanned [10^11, 10^12) in one pass and four of the eighteen
+  segments of [10^12, 10^13) (the ones holding every record above 10^12 and the 10^13 maxima), all
+  agreeing; checked the other fourteen segments only through their largest gaps against A005250;
+  found the A120384 match; and pointed out that the running-maximum annotations on the segment
+  records in the first version of `table.md` were misleading, which is why that list now carries
+  no ratios.
 
 ## Files
 
