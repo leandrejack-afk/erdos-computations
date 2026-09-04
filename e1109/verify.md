@@ -56,16 +56,18 @@ times slower and was not used at the frontier.)
 | witness checker (sympy) on all record sets, plus step-function check of the table | k = 1..65, N <= 3000 | "witnesses checked: 65, failures: 0", "table checked to N=3000: 0 problems" | check_witness.py output |
 | bbmc full-mode boundary proofs | k = 1..65, both classes | see boundary_bbmc.tsv (all rows OK) | boundary_bbmc.tsv |
 | solver2 full-mode boundary proofs | k = 39..65, both classes | see boundary_solver2_r1.tsv, boundary_solver2_r3.tsv | those files |
+| rv_clique (the review's own solver) at every record boundary | k = 39..65, both classes | boundary_reviewer_39_51.tsv, boundary_reviewer_52_60.tsv, boundary_reviewer_61_65.tsv: per-class clique number, maximum over the two classes = k at every boundary | those files |
 | kissat on CNF (satgen.py), class 3, N = 1103, "clique of size 40" | one instance | UNSATISFIABLE in 210 s (160 s with residue selector variables) | rerun: `satgen.py 1103 3 40 x.cnf; kissat x.cnf` |
 | kissat, class 3, N = 2000, "clique of size 54" | one instance | SATISFIABLE in 409 s | rerun with satgen.py |
 
 The solver2 boundary pass is the second-program proof of the UPPER side for
 the new range. Its two TSV files list, per boundary and class, the vertex
-count, the returned maximum, node count, wall seconds and OK/FAIL. Any row
-missing from those files at the time of reading has not yet been re-proved
-by solver2 and the corresponding value should be treated as proved by bbmc
-only (the rows are appended as each instance finishes; the pass is
-sequential in k).
+count, the returned maximum, node count, wall seconds and OK/FAIL. As of
+2026-09-04 both files hold every row k = 39..65 (the rows for k = 59..65 were
+run with boundary_check_par.py, eight instances at a time; finishing times in
+boundary_solver2_par.progress). The review's own solver rv_clique.c covers the
+same boundaries independently (boundary_reviewer_*.tsv); its k = 64 class 3
+and k = 65 rows were run on 2026-09-04 with the same binary.
 
 ## 4. Reproduction
 

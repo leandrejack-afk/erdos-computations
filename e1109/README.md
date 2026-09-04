@@ -91,18 +91,22 @@ graph has no clique of size k + 1, for both classes.
   (`s2_1103.tsv`, `s2_1103.records`, `logs/s2_r1_1103.txt`, `logs/s2_r3_1103.txt`).
 
 - Upper bounds re-proved in full mode (exhaustive search for a clique of size k + 1, no early stop):
-  by bbmc at every record boundary for k = 1..63 in both classes (`boundary_bbmc.tsv`, every row
-  OK; the k = 64, 65 instances were still running when this folder was packaged), and by solver2 at
-  the record boundaries for k = 39..59 (class 1) and k = 39..58 (class 3) (`boundary_solver2_r1.tsv`,
-  `boundary_solver2_r3.tsv`, `boundary_solver2_r3_56_65.tsv`, every row OK). The solver2 pass for
-  k = 57..65 was still running at packaging time, so for those boundaries the upper bound rests on
-  bbmc alone (its incremental pass plus, for k <= 63, its full-mode re-proof). Wall times in the
-  TSV files were measured on a machine shared with other jobs.
+  by bbmc at every record boundary for k = 1..65 in both classes (`boundary_bbmc.tsv`, every row
+  OK), and by solver2 at every record boundary for k = 39..65 in both classes
+  (`boundary_solver2_r1.tsv`, `boundary_solver2_r3.tsv`, every row OK). The solver2 rows for
+  k = 59..65 were run on 2026-09-04 with `boundary_check_par.py`, eight instances at a time;
+  `logs/boundary_solver2_par.progress` has their finishing times. Wall times for the earlier rows
+  were measured on a machine shared with other jobs.
 
 - The review (REVIEW.md) re-checked all 65 sets with its own squarefree sieve, matched the OEIS
-  b-file live, and ran its own clique solver (different vertex order, no shared code) exhaustively
-  at the boundaries for k = 39..51 in both classes, all agreeing; `boundary_reviewer_61_65.tsv` holds
-  its further rows as they finished (k = 61 in both classes at packaging time).
+  b-file live, and ran its own exact clique solver `rv_clique.c` (Tomita-style branch and bound,
+  degree order, no code shared with `bbmc.c` or `solver2.c`; validated against all 700 values of the
+  OEIS b-file) at every record boundary for k = 39..65 in both classes. `boundary_reviewer_39_51.tsv`
+  gives the exact clique number per class (its verdict column compares the per-class value with k;
+  the maximum over the two classes equals k in every row); `boundary_reviewer_52_60.tsv` and
+  `boundary_reviewer_61_65.tsv` give the per-class clique number for the later boundaries, all <= k
+  (verdict LE_k). The rows for k = 64 (class 3) and k = 65 were run on 2026-09-04 with the same
+  program (`rv_boundaries2.sh` is the review's driver).
 
 - Spot checks with kissat on `satgen.py` output: no 40-clique in the class-3 graph at N = 1103
   (UNSAT in 210 s) and a 54-clique in the class-3 graph at N = 2000 (SAT in 409 s). These two runs
@@ -129,14 +133,18 @@ graph has no clique of size k + 1, for both classes.
 
 - `bbmc.c`, `solver2.c`: the two exact solvers (compile with `cc -O3 -march=native`);
   `ostergard.c`: the slower third solver; `satgen.py`: CNF generator for kissat.
+- `rv_clique.c`: the review's own exact clique solver (usage in its header).
 - `merge.py`: combines per-class incremental logs into f(N) and records; `check_witness.py`:
   independent checker of the extremal sets and the table; `boundary_check.py`: re-proves every
-  record boundary with a given solver; `analyze.py`: the structural summary; `nx_check.py`: the
-  OEIS A392164 Python program (Chai Wah Wu) wrapped for spot checks with networkx.
+  record boundary with a given solver, `boundary_check_par.py` the same several instances at a
+  time; `rv_boundaries2.sh`: the review's boundary driver; `analyze.py`: the structural summary;
+  `nx_check.py`: the OEIS A392164 Python program (Chai Wah Wu) wrapped for spot checks with
+  networkx.
 - `f3000.tsv`, `f3000.records`, `b392164_ext.txt`, `b392165_ext.txt`: results. `s2_1103.tsv`,
   `s2_1103.records`: solver2's independent values to N = 1103. `boundary_*.tsv`: the boundary
-  re-proofs, one row per boundary and class. `logs/`: the raw incremental solver logs (per N:
-  running bound, vertex count, nodes, seconds, and the witness at each jump).
+  re-proofs, one row per boundary and class (bbmc, solver2 and the review's solver). `logs/`: the
+  raw incremental solver logs (per N: running bound, vertex count, nodes, seconds, and the witness
+  at each jump) and the finishing times of the parallel solver2 boundary run.
 - `verify.md`: the verification record. `REVIEW.md`: the adversarial review.
 
 ## Reproduce
@@ -150,12 +158,16 @@ graph has no clique of size k + 1, for both classes.
     python3 boundary_check.py f3000.records 3000 ./bbmc 3,5 1 boundary_bbmc.tsv
     python3 boundary_check.py f3000.records 3000 ./solver2 3,5 39 boundary_solver2_r1.tsv 1
     python3 boundary_check.py f3000.records 3000 ./solver2 3,5 39 boundary_solver2_r3.tsv 3
+    python3 boundary_check_par.py f3000.records 3000 ./solver2 3,5 boundary_solver2_par 8 1:65,64,63,62,61,60 3:65,64,63,62,61,60,59
     ./bbmc full 3 1998 54 3,5        # prints best=54: no 55-clique in class 3 at N = 1998
     ./solver2 full 3 1998 54 3,5     # same
     ./bbmc full 1 2993 64 3,5        # finds the 65-clique at N = 2993
+    cc -O3 -march=native -o rv_clique rv_clique.c
+    ./rv_clique 1 3000 0 1           # answer=65: the class-1 clique number at N = 3000
+    ./rv_clique 3 3000 0 1           # answer=64
 
 `b392164.txt` is the OEIS b-file, https://oeis.org/A392164/b392164.txt (its 700 values are the first
 700 lines of `b392164_ext.txt`).
 
-Computed 2026-09-03 on an Apple M5 laptop. Programs written and run with Claude Code (Claude Fable
+Computed 2026-09-03 and 2026-09-04 on an Apple M5 laptop. Programs written and run with Claude Code (Claude Fable
 5.1) assistance; every claim above comes from the executed runs.
