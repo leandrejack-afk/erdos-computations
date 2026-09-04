@@ -1,0 +1,105 @@
+RECORD GAP 1 after prime 2
+RECORD GAP 2 after prime 3
+RECORD PROD 2 = 1*2 (middle prime 3) ratio=0.500000
+RECORD PROD 4 = 2*2 (middle prime 5) ratio=1.000000
+X=10 maxgap=2 (after 3) maxprod=4 (=2*2 after 5) ratio=1.000000
+RECORD GAP 4 after prime 7
+RECORD PROD 8 = 2*4 (middle prime 7) ratio=0.500000
+RECORD GAP 6 after prime 23
+RECORD PROD 24 = 4*6 (middle prime 23) ratio=0.666667
+RECORD PROD 36 = 6*6 (middle prime 53) ratio=1.000000
+RECORD GAP 8 after prime 89
+RECORD PROD 48 = 6*8 (middle prime 89) ratio=0.750000
+X=100 maxgap=8 (after 89) maxprod=48 (=6*8 after 89) ratio=0.750000
+RECORD GAP 14 after prime 113
+RECORD PROD 56 = 4*14 (middle prime 113) ratio=0.285714
+RECORD PROD 144 = 12*12 (middle prime 211) ratio=0.734694
+RECORD GAP 18 after prime 523
+RECORD GAP 20 after prime 887
+X=1000 maxgap=20 (after 887) maxprod=144 (=12*12 after 211) ratio=0.360000
+RECORD GAP 22 after prime 1129
+RECORD PROD 180 = 10*18 (middle prime 1259) ratio=0.371901
+RECORD GAP 34 after prime 1327
+RECORD PROD 204 = 6*34 (middle prime 1327) ratio=0.176471
+RECORD PROD 224 = 16*14 (middle prime 1847) ratio=0.193772
+RECORD PROD 432 = 18*24 (middle prime 2179) ratio=0.373702
+RECORD PROD 468 = 26*18 (middle prime 2503) ratio=0.404844
+RECORD PROD 512 = 32*16 (middle prime 5623) ratio=0.442907
+RECORD GAP 36 after prime 9551
+X=10000 maxgap=36 (after 9551) maxprod=512 (=32*16 after 5623) ratio=0.395062
+RECORD PROD 720 = 20*36 (middle prime 14107) ratio=0.555556
+RECORD GAP 44 after prime 15683
+RECORD GAP 52 after prime 19609
+RECORD PROD 1040 = 52*20 (middle prime 19661) ratio=0.384615
+RECORD PROD 1080 = 30*36 (middle prime 24281) ratio=0.399408
+RECORD GAP 72 after prime 31397
+RECORD PROD 1680 = 40*42 (middle prime 38501) ratio=0.324074
+RECORD PROD 2436 = 42*58 (middle prime 58831) ratio=0.469907
+X=100000 maxgap=72 (after 31397) maxprod=2436 (=42*58 after 58831) ratio=0.469907
+RECORD GAP 86 after prime 155921
+RECORD PROD 2760 = 46*60 (middle prime 268343) ratio=0.373175
+RECORD GAP 96 after prime 360653
+RECORD GAP 112 after prime 370261
+RECORD PROD 3800 = 100*38 (middle prime 396833) ratio=0.302934
+RECORD GAP 114 after prime 492113
+X=1000000 maxgap=114 (after 492113) maxprod=3800 (=100*38 after 396833) ratio=0.292398
+RECORD PROD 4340 = 70*62 (middle prime 1272749) ratio=0.333949
+RECORD GAP 118 after prime 1349533
+RECORD GAP 132 after prime 1357201
+RECORD GAP 148 after prime 2010733
+RECORD PROD 5760 = 72*80 (middle prime 2198981) ratio=0.262966
+RECORD PROD 5940 = 90*66 (middle prime 3863107) ratio=0.271183
+RECORD PROD 6020 = 86*70 (middle prime 4411963) ratio=0.274836
+RECORD GAP 154 after prime 4652353
+RECORD PROD 6380 = 110*58 (middle prime 4958131) ratio=0.269017
+RECORD PROD 6840 = 90*76 (middle prime 5102953) ratio=0.288413
+RECORD PROD 7344 = 68*108 (middle prime 7950001) ratio=0.309664
+RECORD PROD 8400 = 60*140 (middle prime 8917523) ratio=0.354191
+X=10000000 maxgap=154 (after 4652353) maxprod=8400 (=60*140 after 8917523) ratio=0.354191
+RECORD PROD 9792 = 102*96 (middle prime 10938023) ratio=0.412886
+RECORD PROD 9800 = 100*98 (middle prime 12623189) ratio=0.413223
+RECORD GAP 180 after prime 17051707
+RECORD GAP 210 after prime 20831323
+RECORD PROD 9828 = 78*126 (middle prime 22440841) ratio=0.222857
+RECORD PROD 9996 = 98*102 (middle prime 24662467) ratio=0.226667
+RECORD PROD 10856 = 92*118 (middle prime 32616223) ratio=0.246168
+RECORD GAP 220 after prime 47326693
+RECORD PROD 11520 = 144*80 (middle prime 48423773) ratio=0.238017
+RECORD PROD 11904 = 96*124 (middle prime 54413899) ratio=0.245950
+RECORD PROD 15120 = 140*108 (middle prime 72546283) ratio=0.312397
+X=100000000 maxgap=220 (after 47326693) maxprod=15120 (=140*108 after 72546283) ratio=0.312397
+RECORD PROD 17384 = 106*164 (middle prime 102765683) ratio=0.359174
+RECORD GAP 222 after prime 122164747
+RECORD PROD 22040 = 116*190 (middle prime 142414669) ratio=0.447204
+RECORD GAP 234 after prime 189695659
+RECORD GAP 248 after prime 191912783
+RECORD PROD 26832 = 172*156 (middle prime 325737821) ratio=0.436264
+RECORD GAP 250 after prime 387096133
+RECORD GAP 282 after prime 436273009
+RECORD PROD 26928 = 132*204 (middle prime 476956933) ratio=0.338615
+X=1000000000 maxgap=282 (after 436273009) maxprod=26928 (=132*204 after 476956933) ratio=0.338615
+RECORD PROD 27200 = 160*170 (middle prime 1131241763) ratio=0.342035
+RECORD GAP 288 after prime 1294268491
+RECORD GAP 292 after prime 1453168141
+RECORD PROD 27216 = 168*162 (middle prime 1791752797) ratio=0.319197
+RECORD GAP 320 after prime 2300942549
+RECORD PROD 28800 = 240*120 (middle prime 2390311379) ratio=0.281250
+RECORD PROD 32232 = 204*158 (middle prime 2888688863) ratio=0.314766
+RECORD PROD 32640 = 240*136 (middle prime 2949347131) ratio=0.318750
+RECORD PROD 36984 = 134*276 (middle prime 3367207801) ratio=0.361172
+RECORD GAP 336 after prime 3842610773
+RECORD GAP 354 after prime 4302407359
+RECORD PROD 37184 = 224*166 (middle prime 6613941601) ratio=0.296722
+RECORD PROD 37944 = 204*186 (middle prime 8835528511) ratio=0.302787
+RECORD PROD 41748 = 142*294 (middle prime 9085929179) ratio=0.333142
+X=10000000000 maxgap=354 (after 4302407359) maxprod=41748 (=142*294 after 9085929179) ratio=0.333142
+RECORD GAP 382 after prime 10726904659
+RECORD PROD 43844 = 226*194 (middle prime 11179888193) ratio=0.300458
+RECORD PROD 46200 = 220*210 (middle prime 15318488291) ratio=0.316603
+RECORD GAP 384 after prime 20678048297
+RECORD GAP 394 after prime 22367084959
+RECORD PROD 48216 = 246*196 (middle prime 24016237123) ratio=0.310598
+RECORD GAP 456 after prime 25056082087
+RECORD PROD 62160 = 222*280 (middle prime 31587561361) ratio=0.298938
+RECORD GAP 464 after prime 42652618343
+X=100000000000 maxgap=464 (after 42652618343) maxprod=62160 (=222*280 after 31587561361) ratio=0.288719

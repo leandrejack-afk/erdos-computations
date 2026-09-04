@@ -10,3 +10,5 @@ README with the result and how it was independently verified.
   for n = 30 to 35 and a correction to two posted witnesses.
 - `e1109/`: Erdős Problem 1109, exact values of f(N) for N <= 3000 (extending OEIS A392164 and A392165 from
   N = 1103), with every record boundary re-proved by two further programs.
+- `e1137/`: Erdős Problem 1137, the largest gap and the largest product of two consecutive gaps between primes
+  below X, for X up to 10^13.
