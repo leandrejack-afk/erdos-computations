@@ -104,9 +104,10 @@ with its own code, is `REVIEW.md` (verdict: safe with wording edits; this README
       RESULT 28 18253129921842 18253129921842
 
   The two fields are the least N for n = 28 and for n = 29. The review points out that the original
-  run kept no record of its command line. A rerun that logs the command line was started on
-  2026-09-03 at 17:39 (`logs/rerun-sharvil-n28.log`); it was still running when this folder was
-  packaged, so `logs/rerun-sharvil-n28.out` and `.err` are empty here.
+  run kept no record of its command line. A second, logged run of the same source, rebuilt on
+  2026-09-04 (`PAIR=1 NT=6 ./sharvil389 28 1 18253129921842`, six threads, 1 h 26 m of wall time),
+  printed the identical line `RESULT 28 18253129921842 18253129921842`; command line, start and end
+  times are in `logs/rerun-sharvil-n28.log` and the output in `logs/rerun-sharvil-n28.out`.
 
 - The C sieve reproduces every published term it was run against, each pair scanned from k = 1:
   a(1)..a(22) by `regress.sh` (output quoted in `verify.md`), and a(23), a(24) by a full scan to
@@ -140,7 +141,7 @@ with its own code, is `REVIEW.md` (verdict: safe with wording edits; this README
 - `reference-sharvil-erdos_problem_389.cpp`: Sharvil Kesarwani's published solver, copied unchanged
   from https://github.com/sharky564/ErdosProblems (md5 0c61bca7a1a83543e8c6bafc277cacc3).
 - `logs/`: the regression output for n = 24, 25, the result line of the completed published-solver
-  run, and the log of the rerun in progress.
+  run, and the command line, timestamps and output of the logged second run.
 - `oeis-extension.txt`: the note prepared for the A375071 editors. `verify.md`: the verification
   record. `REVIEW.md`: the adversarial review.
 
@@ -156,5 +157,5 @@ with its own code, is `REVIEW.md` (verdict: safe with wording edits; this README
     g++ -O3 -march=native -std=c++23 reference-sharvil-erdos_problem_389.cpp -o sharvil389
     PAIR=1 NT=10 ./sharvil389 28 1 18253129921842    # the published solver; about 2 hours
 
-Computed 2026-09-03 on an Apple M5 laptop. Programs written and run with Claude Code (Claude Fable
+Computed 2026-09-03 and 2026-09-04 on an Apple M5 laptop. Programs written and run with Claude Code (Claude Fable
 5.1) assistance; every claim above comes from the executed runs.
