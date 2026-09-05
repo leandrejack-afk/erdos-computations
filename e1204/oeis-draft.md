@@ -27,7 +27,7 @@ a(n) = Sum_{j=1..n} A135311(j), the sum of the first n terms of the greedy admis
 
 The optimal n-tuple is unique for every n <= 147 except n = 109, where exactly two tuples attain a(109) = 31862: one begins 0, 2, 6, 8, 12, 18, 20, 26, ... and the other 0, 4, 6, 10, 16, 18, 24, 28, ...
 
-B(n)/(n log n) decreases slowly: 0.594 at n = 40, 0.572 at n = 100, 0.567 at n = 147; the commentary on the problem page expects B(n) ~ (1/2 + o(1)) n log n. The ratio B(n)/A008407(n) stays near 0.48 for 40 <= n <= 147.
+B(n)/(n log n) decreases slowly: 0.594 at n = 40, 0.572 at n = 100, 0.567 at n = 147; the commentary on the problem page expects B(n) ~ (1/2 + o(1)) n log n. The ratio B(n)/A008407(n) stays between 0.45 and 0.48 for 40 <= n <= 147.
 
 All terms were computed by two different exact searches (branch-and-bound over increasing tuples; search over the missed residue class of each prime, taking the n smallest survivors of the sieve) that agree on the values and on the optimal tuples for n <= 147; a MaxSAT model of the definition (python-sat, RC2) confirms values and uniqueness for n <= 38.
 

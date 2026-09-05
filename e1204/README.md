@@ -26,9 +26,9 @@ S(k) for k = 1..147 is in `b-file-S.txt` (format "k S(k)"); the first terms are
 
     0, 2, 8, 16, 28, 46, 66, 92, 122, 154, 190, 232, 280, 330, 386, 448, 516, 588, 666, 752, ...
 
-and S(147) = 61190. Each of these 147 values was produced by two independent exact searches that
-share no code and use no external data (`smin.c` and `rvs.c`), agreeing on the value and on the
-complete set of optimal tuples; a MaxSAT model of the definition agrees for k <= 38, and a run of
+and S(147) = 61190. Each of these 147 values was produced by two different exact searches that
+use no external data (`smin.c` and `rvs.c`; same reduction and greedy incumbent, different search
+methods), agreeing on the value and on the complete set of optimal tuples; a MaxSAT model of the definition agrees for k <= 38, and a run of
 `smin.c` with elementwise bounds from A008407 agrees for k <= 144.
 
 `S-all-runs.txt` holds every k that any run reached (k <= 170 in the copy here). Its values for
@@ -43,8 +43,8 @@ Facts from the computed range:
   366 and 440).
 - The optimal tuple is unique for every k <= 147 except k = 109, where two tuples attain
   S(109) = 31862.
-- B(k)/(k log k) decreases slowly: 0.628 (k = 20), 0.594 (40), 0.572 (100), 0.567 (147), still well
-  above the expected 1/2 + o(1). B(k)/A(k) stays near 0.48 for 40 <= k <= 147.
+- B(k)/(k log k) falls slowly overall, though not monotonically: 0.628 (k = 20), 0.594 (40), 0.572 (100), 0.567 (147), still well
+  above the expected 1/2 + o(1); for scale, A(k)/(k log k) = 1.20 at k = 147. B(k)/A(k) stays between 0.45 and 0.48 for 40 <= k <= 147.
 
 ## Method
 
@@ -92,8 +92,8 @@ Coverage: for k <= 38 three methods agree on the value and the unique optimal tu
 as well for k <= 144; for k >= 148 only M2 has run. Other checks: `greedy.py 2000` equals the
 A135311 b-file for n = 1..2000; `smin_short.py 40` prints the same 40 terms as the C runs.
 
-The adversarial review of this folder was still in progress when it was packaged; `REVIEW.md` is a
-copy of the review record as it stood at that time and may need refreshing.
+`REVIEW.md` is the independent adversarial review of this folder (2026-09-04); its required edits are
+applied here.
 
 ## Files
 
@@ -105,7 +105,7 @@ copy of the review record as it stood at that time and may need refreshing.
   `sat-*.txt` files are M3, `short-run.txt` is M4, the `r40-*.txt` files are the pruning variants),
   `crosscheck.txt`, `table-full.txt`, and the two helper scripts `monitor.sh` and `short-run.py`
   that drove the refresh loop and the Python run.
-- `verify.md`: the verification record. `REVIEW.md`: the review record (in progress).
+- `verify.md`: the verification record. `REVIEW.md`: the independent review record.
 
 ## Reproduce
 
