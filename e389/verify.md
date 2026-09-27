@@ -2,8 +2,9 @@
 
 The claim is: k = 18253129921815 (n = 28) and k = 18253129921814 (n = 29) are
 the **least** k for which the divisibility holds. Two things need proof: the
-witness divides, and nothing smaller does. Each is checked by more than one
-independent code path. Exact integer arithmetic throughout; no floating point
+witness divides, and nothing smaller does. Divisibility is checked by three
+independent methods; minimality rests on the published solver (section 2).
+Exact integer arithmetic throughout; no floating point
 enters any accept/reject decision.
 
 ## 1. The witnesses divide, three independent ways
@@ -39,10 +40,12 @@ n=29 k=18253129921813 N=18253129921841 valuation: fails at p=84239
 
 ## 2. Nothing smaller divides: exhaustive search from k = 1
 
-Two independent implementations scan every k from 1 up to the witness and report
-the first (hence least) that divides.
+Sharvil Kesarwani's published solver scanned every N from 1 up to the witness,
+twice (2a), and reports the first (hence least) that divides. A second
+implementation of the same method (2b) agrees with it wherever both were run, but
+its own full scan was not completed, so it is supporting evidence, not a second proof.
 
-### 2a. Independent solver (Sharvil Kesarwani, published C++)
+### 2a. Published solver (Sharvil Kesarwani, C++)
 
 `reference-sharvil-erdos_problem_389.cpp` (from github.com/sharky564/ErdosProblems)
 run in pair worker mode over N in [1, 18253129921842]:
@@ -57,7 +60,7 @@ The two fields are the least N for n = 28 and for n = 29. Both equal
 returned the witness as the minimum, no smaller k divides. Wall time ~1 h 50 m
 on the M5.
 
-### 2b. Independent solver (this work, C sieve)
+### 2b. Second implementation of the same method (this work, C sieve)
 
 `e389_sieve.c` is a second implementation of the governor-sieve method used by
 the published solver (same overall architecture: segmented chunks, divisor-size and
@@ -98,8 +101,9 @@ I did **not** run this sieve through the full 1.8 x 10^13 range for n = 28 in
 this session. A full scan is feasible (about 7 h single-machine uncontended,
 benchmarked below), but on a shared, heavily loaded box it would have taken far
 longer than the session, so I stopped it after confirming it was progressing
-correctly (it reached N ~ 1.4 x 10^11 with no spurious witness). The independent
-exhaustive minimality proof therefore rests on Sharvil's completed run in 2a.
+correctly (it reached N ~ 1.4 x 10^11 with no spurious witness). The exhaustive
+minimality proof therefore rests on Sharvil's solver in 2a: two completed runs, the
+second logged in `logs/rerun-sharvil-n28.log` (six threads, 1 h 26 m, same result).
 The two implementations agree everywhere both have been run:
 - every published term n = 2..25 (regression plus the 10^12 scan), identical;
 - a 2^36-wide window near N = 10^13 for n = 28, 29: both report no witness (4).
@@ -188,8 +192,9 @@ Both solvers over the same 2^36-wide window near N = 10^13, uncontended,
 | e389_sieve (this work, C)  |   ~45 s   |
 
 They agree that the window contains no witness (both report NONE). The C sieve
-is about 2x slower and independently written, which is what makes it a valid
-second implementation rather than a copy.
+is about 2x slower and separately written (with the published source at hand),
+so it is a second implementation of the same method rather than a copy, not an
+independent method.
 
 ## Reproduce
 

@@ -5,10 +5,9 @@ Sequence: Smallest k such that Product_{i=1..k} (n+i) divides
 Product_{i=1..k} (n+k+i), or 0 if there is no such k.
 Offset 0, so index i is problem-n = i+1.
 
-Currently published: a(0)..a(26)  (n = 1..27).
+Published on 2026-09-27: a(0)..a(26)  (n = 1..27).
 
-NEW TERMS (both proven minimal by exhaustive search from k=1, cross-checked
-with two independent implementations):
+NEW TERMS:
 
   a(27) = 18253129921815     (n = 28)
   a(28) = 18253129921814     (n = 29)
@@ -17,15 +16,17 @@ with two independent implementations):
 27 18253129921815
 28 18253129921814
 
---- extension credit line ---
-a(27)-a(28) from Leandre Jack, Sep 03 2026
-
-Notes for the editor:
-- These two values were previously known only as upper bounds (KentaKitamura,
-  Erdős Problems forum #389, 01 Aug 2026). This submission proves minimality:
-  an exhaustive scan of every k from 1 to the witness finds no smaller k, run
-  independently in a purpose-built C sieve and in Sharvil Kesarwani's published
-  C++ solver, both returning N = n+k-1 = 18253129921842 as the least witness.
-- n = 28 and n = 29 share N = 18253129921842 (they are the pair 2K+2, 2K+3 with
-  K = 13); the divisibility depends only on N and the block length.
-- Verification detail and code: results.md / verify.md in the submission.
+Basis (see README.md and verify.md in this folder):
+- Minimality: Sharvil Kesarwani's published solver (the program behind
+  a(19)-a(26)) scanned every N from 1 to 18253129921842 and returned that N as
+  the least witness for both n = 28 and n = 29. It was run twice with the same
+  result; the second run is logged in logs/rerun-sharvil-n28.log.
+- Divisibility of both witnesses: checked separately by exact prime-by-prime
+  valuations (verify.md, section 1); N - 1 fails for both n at p = 84239.
+- The C sieve in this folder is a second implementation of the same method. It
+  reproduces every published term and agrees with the solver on a 2^36-wide
+  window near N = 10^13, but its own full scan of this range was not completed.
+- The two values were first posted as upper bounds by KentaKitamura on the
+  Erdos Problems forum (#389, 01 Aug 2026).
+- The entry's credit line "a(19)-a(27) from Sharvil Kesarwani" appears shifted
+  by one: its data field ends at a(26).
