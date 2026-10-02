@@ -157,5 +157,4 @@ with its own code, is `REVIEW.md` (verdict: safe with wording edits; this README
     g++ -O3 -march=native -std=c++23 reference-sharvil-erdos_problem_389.cpp -o sharvil389
     PAIR=1 NT=10 ./sharvil389 28 1 18253129921842    # the published solver; about 2 hours
 
-Computed 2026-09-03 and 2026-09-04 on an Apple M5 laptop. Programs written and run with Claude Code (Claude Fable
-5.1) assistance; every claim above comes from the executed runs.
+Computed 2026-09-03 and 2026-09-04 on an Apple M5 laptop. Programs written and run with the assistance of a large language model; every claim above comes from the executed runs.

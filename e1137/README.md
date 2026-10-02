@@ -93,4 +93,4 @@ Checks run on 2026-09-04, before posting:
     python3 mk1137.py > table.md                 # from logs/gaps_1e13.log and segs/
 
 Scans run 2026-09-03 and checks 2026-09-04 on an Apple M5 laptop with primesieve 12.15. Programs
-written and run with Claude Code assistance; every number above comes from the executed runs.
+written and run with the assistance of a large language model; every number above comes from the executed runs.

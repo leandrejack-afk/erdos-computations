@@ -169,5 +169,4 @@ graph has no clique of size k + 1, for both classes.
 `b392164.txt` is the OEIS b-file, https://oeis.org/A392164/b392164.txt (its 700 values are the first
 700 lines of `b392164_ext.txt`).
 
-Computed 2026-09-03 and 2026-09-04 on an Apple M5 laptop. Programs written and run with Claude Code (Claude Fable
-5.1) assistance; every claim above comes from the executed runs.
+Computed 2026-09-03 and 2026-09-04 on an Apple M5 laptop. Programs written and run with the assistance of a large language model; every claim above comes from the executed runs.

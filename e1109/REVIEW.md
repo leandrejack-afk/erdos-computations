@@ -4,7 +4,7 @@ VERDICT: SAFE WITH EDITS (see the list at the end; the mathematics checks out,
 the comment overstates the state of the second-solver evidence at the time of
 review and misquotes one numeric range)
 
-Reviewer: opus-reviewer, fresh context, 2026-09-03 16:57 to 17:30 local.
+Reviewer: independent reviewer, fresh context, 2026-09-03 16:57 to 17:30 local.
 Nothing below is taken on the implementer's word; every check was re-run with
 the reviewer's own scripts in the session scratchpad
 (rv_witness.py, rv_clique.c, rv_boundaries*.sh). Commands and observed output

@@ -122,5 +122,4 @@ applied here.
 reads it from `../../scratch/b008407.txt`, the layout of the private working tree; point `A_FILE`
 at your copy.
 
-Computed 2026-09-03 on an Apple M5 laptop. Programs written and run with Claude Code (Claude Fable
-5.1) assistance; every claim above comes from the executed runs.
+Computed 2026-09-03 on an Apple M5 laptop. Programs written and run with the assistance of a large language model; every claim above comes from the executed runs.

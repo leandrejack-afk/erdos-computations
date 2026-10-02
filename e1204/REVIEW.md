@@ -1,7 +1,7 @@
 VERDICT: SAFE WITH EDITS. Every value and every observation in comment.txt reproduces independently; one ratio sentence overstates the data ("near 0.48" for values that run 0.457 to 0.480) and the linked public README still says the review is in progress and names the model.
 
 Reviewer: independent adversarial review, fresh context, 2026-09-04 (about 60 minutes). Scratch code and outputs:
-/private/tmp/claude-501/-Users-leandrejack-projects-math-contributions/b9999d76-7575-45d2-b9a6-9daac0292484/scratchpad/rev1204/
+(local scratch folder)/rev1204/
 
 ## Pinned inputs
 
@@ -17,7 +17,7 @@ Reviewer: independent adversarial review, fresh context, 2026-09-04 (about 60 mi
 1. Independent agreement: PASS. Two different exact searches (smin.c, rvs.c) agree for k <= 147 (I re-parsed both logs myself, see below), and I reproduced the values, the optimal tuples and the uniqueness pattern with my own program written from the definition for k <= 127 (see "What I did not get to" for the ceiling), with a reduction-free z3 model for k in {3, 5, 8, 12} and with a reduction-free brute force for k <= 7.
 2. Adversarial review run: this file. Required edits are listed below; the verdict assumes they are applied.
 3. Code and logs public, comment links to them: PASS (md5s above; the comment's href points at the e1204 folder, which contains smin.c, rvs.c, runs/crosscheck.txt, runs/rvs-400.txt with the tuples, and b-file-S.txt with 147 terms).
-4. Disclosure, no model name, no dashes: PASS for comment.txt. `grep -nP '\x{2014}|\x{2013}'` finds nothing; `grep -P '[^\x00-\x7F]'` finds nothing (pure ASCII); `grep -iE 'claude|gpt|fable|opus|sonnet|gemini|openai|anthropic'` finds nothing; the sentence "AI disclosure: the programs were written and run with the assistance of a large language model; ..." is present. Word count 266. The forum rules (fetched today from /forum) say "AI assistance in generating ideas or helping to formulate the text of a comment is allowed, but should be disclosed" and "The contents of all comments, including any mathematical claims, should be independently verified by a human before posting here": the disclosure satisfies the first; the second is Leandre's obligation, and this review gives him the material.
+4. Disclosure, no model name, no dashes: PASS for comment.txt. `grep -nP '\x{2014}|\x{2013}'` finds nothing; `grep -P '[^\x00-\x7F]'` finds nothing (pure ASCII); a search for AI vendor and model names finds nothing; the sentence "AI disclosure: the programs were written and run with the assistance of a large language model; ..." is present. Word count 266. The forum rules (fetched today from /forum) say "AI assistance in generating ideas or helping to formulate the text of a comment is allowed, but should be disclosed" and "The contents of all comments, including any mathematical claims, should be independently verified by a human before posting here": the disclosure satisfies the first; the second is Leandre's obligation, and this review gives him the material.
 
 ## What I checked and how
 
@@ -136,7 +136,7 @@ Post bodies on the site (threads 1, 3, 5, 10, 44, 1000, 1003, 1004, 1005 fetched
 
 ## Optional edits
 
-- README.md line 125 names the model ("Programs written and run with Claude Code (Claude Fable 5.1) assistance") while the comment deliberately does not. If the intent is no model name anywhere public, use: `Programs written and run with the assistance of a large language model; every claim above comes from the executed runs.` Otherwise leave it, knowingly. (The stale public REVIEW.md also names it; edit 3 removes that.)
+- README.md line 125 named the model while the comment deliberately did not. Resolved 2026-10-01: every README now says the programs were written and run with the assistance of a large language model, with no model name.
 - comment.txt (3): "decreases slowly" is a sampled trend, not a monotone fact (the ratio rises at 20 of 127 steps). `drifts down slowly` would be exact; the four sampled values are correct either way.
 - comment.txt (3): "still well above the expected 1/2 + o(1)" reads as doubt about the conjecture, but the same range has A(k)/(k log k) = 1.20 at k = 147, above even the constant 1 of the known upper bound, so lower-order terms dominate here. Neutral alternative: `compared with the expected 1/2 + o(1) (for scale, A(k)/(k log k) = 1.20 at k = 147)`.
 - README.md "Result": `two independent exact searches that share no code` -> `two different exact searches`; both files were written by the same tool and share the reduction, the greedy incumbent and near-identical prime loops. "Different" is the defensible word and is what the comment says.

@@ -1,6 +1,6 @@
 VERDICT: SAFE WITH EDITS. Every number in the draft reproduces from my own code and from OEIS, but one sentence is false (OEIS A120384 already tabulates the record products, 54 terms identical to the log) and the opening "the heuristic above" points the wrong way under the thread's default newest-first order. Two required edits, then post.
 
-Reviewer: opus-reviewer (fresh context), 2026-09-04, about 65 minutes, two threads.
+Reviewer: independent reviewer (fresh context), 2026-09-04, about 65 minutes, two threads.
 
 ## Pinned inputs
 
@@ -8,7 +8,7 @@ Reviewer: opus-reviewer (fresh context), 2026-09-04, about 65 minutes, two threa
 - `/Users/leandrejack/projects/math-contributions/workspace/targets/lit-sweep-1137-table.md` md5 `ccb33d6b73967d3531e48b4ce3023f39`
 - Evidence folder `/Users/leandrejack/projects/math-contributions/workspace/evidence/e1137-prime-gaps/` (gaps.c, gapseg.c, mk1137.py, gaps_1e13.log, segs/seg12_1..9, seg13_1..18)
 - Public folder: `erdos-computations` commit `e7933df` (pushed 2026-09-04 23:03 UTC, repo public). `table.md`, `gaps.c`, `gapseg.c`, `logs/gaps_1e13.log` and all 27 `segs/*.txt` are byte-identical to the evidence folder (`diff` clean); `mk1137.py` differs only in the log path (`logs/gaps_1e13.log`).
-- Scratch: `/private/tmp/claude-501/-Users-leandrejack-projects-math-contributions/b9999d76-7575-45d2-b9a6-9daac0292484/scratchpad/rev1137/` (myscan.c, myseg.c, cramer.c, fetched OEIS/thread files, outputs).
+- Scratch: `(local scratch folder)/rev1137/` (myscan.c, myseg.c, cramer.c, fetched OEIS/thread files, outputs).
 
 ## What I checked and how
 

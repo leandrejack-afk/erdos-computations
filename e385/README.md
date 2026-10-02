@@ -38,5 +38,4 @@ problem (August 2024), who also reported the values 8742, 267672 and 267680.
 - The segmented program was also checked against the plain sieve on [200000, 300000] (finds exactly
   267672 and 267680) and on [10^9, 1.2 x 10^9] (no exceptions), agreeing with `fn.c`.
 
-Computed 2026-09-03 on an Apple M5 laptop. Programs written and run with Claude Code (Claude Fable
-5.1) assistance; every claim above comes from the executed runs.
+Computed 2026-09-03 on an Apple M5 laptop. Programs written and run with the assistance of a large language model; every claim above comes from the executed runs.

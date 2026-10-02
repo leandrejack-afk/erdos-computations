@@ -2,7 +2,7 @@
 
 VERDICT: SAFE WITH EDITS (edits E1 to E6 below; E1 to E4 are required before posting)
 
-Reviewer: opus-reviewer, fresh context, 2026-09-03 17:00 to 17:50 local, bounded review.
+Reviewer: independent reviewer, fresh context, 2026-09-03 17:00 to 17:50 local, bounded review.
 Pinned inputs (md5): comment.txt 70349428c39a109d4e6ea142647a1824, results.md e50c2a0baa1f3533d4c7a8cf88221494,
 verify.md b7ca51639c6de962442ab4faf4782ca7, oeis-extension.txt 4f9f877e3d2ff5eb4d0f9ae68668298d,
 e389_sieve.c 477a6c4289d19a8146e06515bd44a927, e389_sieve (binary) f5b86ae1ef50025a0fbaa2a06a534ee9,

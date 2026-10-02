@@ -1,7 +1,7 @@
 VERDICT: SAFE WITH EDITS (two priority sentences in comment.txt are false; the mathematics and the computation hold)
 
-Reviewer: opus-reviewer, 2026-09-03. Independent re-derivation, nothing in e385/ modified except this file.
-Scratch artifacts: /private/tmp/claude-501/-Users-leandrejack/845d5f5a-a16a-4476-95d6-72ef8a59b3f2/scratchpad/e385/
+Reviewer: independent reviewer, 2026-09-03. Independent re-derivation, nothing in e385/ modified except this file.
+Scratch artifacts: (local scratch folder)/e385/
 
 REQUIRED EDITS (comment.txt):
 1. Delete or rewrite the priority claims "where the values 8742, 267672 and 267680 were first reported;
