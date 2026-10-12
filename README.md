@@ -4,6 +4,9 @@ Computations on problems from the Erdős Problems database (https://www.erdospro
 with programs written and run with the assistance of a large language model. Each folder holds the code, the raw logs and a
 README with the result and how it was independently verified.
 
+- `e382/`: Erdős Problem 382, the first maximal bad intervals of widths 9 to 13 and 15 (exact,
+  extending OEIS A388850; the five values for widths 9 to 13 had been known only as upper bounds),
+  with no maximal bad interval of width 14 below 2 x 10^14.
 - `e385/`: exceptions to F(n) > n below 10^11 for Erdős Problem 385 (equivalently, the values of n for which
   the sequence in Problem 430 is entirely prime).
 - `e389/`: Erdős Problem 389, the least k for n = 28 and n = 29 (exact, extending OEIS A375071), upper bounds

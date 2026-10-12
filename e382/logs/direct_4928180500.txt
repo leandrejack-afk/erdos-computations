@@ -1,0 +1,14 @@
+N 4928180500 LMAX 128
+SQUAREPOINTS 3762118
+FLAGS 0
+RUN 4928180396 4928180405 len 10
+FIRST len 1 start 4 count 3614930
+FIRST len 2 start 8 count 127140
+FIRST len 3 start 48 count 13667
+FIRST len 4 start 1680 count 2245
+FIRST len 5 start 76725 count 632
+FIRST len 6 start 332925 count 181
+FIRST len 7 start 7474752 count 45
+FIRST len 8 start 4541154 count 13
+FIRST len 9 start 75047565 count 4
+FIRST len 10 start 4928180396 count 1

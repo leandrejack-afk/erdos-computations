@@ -1,0 +1,5 @@
+1. bpsw vs sieve to 30000000: 4161104 tested, 0 wrong
+2. bpsw vs MR on random n < 2^62: 832745 tested (232520 prime), 0 disagree
+3. composites that fool weaker tests, rejected: 60 of 60
+4. rho_floyd on semiprimes: 200000 tested, 0 wrong
+5. all_factors_le vs trial division: 400000 tested, 0 wrong
