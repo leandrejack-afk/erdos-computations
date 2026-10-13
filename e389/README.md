@@ -54,8 +54,9 @@ Values that remain upper bounds only, each verified to divide by the prime-valua
 Exhaustive scans for these would run over N up to about 3.6 x 10^14 (n = 30, 31), 2.4 x 10^15
 (n = 32, 33) and 2.0 x 10^16 (n = 34, 35), out of reach on one machine. One correction: the n = 34, 35
 values Sharvil Kesarwani posted on the forum, k = 20021368432952132 and 20021368432952131, are not
-witnesses; both fail at p = 67. They equal N + n - 1 instead of N - n + 1 for
-N = 20021368432952099, which is a(16) of A375077 (Justin Dehorty, Jul 28 2026). The corrected values
+witnesses; both fail at p = 67. Both correspond to N = n + k - 1 = 20021368432952165 rather than to
+N = 20021368432952099, which is a(16) of A375077 (Justin Dehorty, Jul 28 2026), so each is 66 too
+large. The corrected values
 in the table, k = 20021368432952066 (n = 34) and 20021368432952065 (n = 35), do divide. Their
 minimality is unproven.
 

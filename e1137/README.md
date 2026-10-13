@@ -24,7 +24,8 @@ pair of consecutive gaps is identified by its middle prime, the prime between th
 
 `table.md` is the same table with the list of record products. Below 10^11 the log holds every
 record-breaking product (54 `RECORD PROD` lines in `logs/gaps_1e13.log`). Their middle primes are
-exactly the 54 terms of OEIS A120384 (Ken Takusagawa, 2006: primes at which the geometric mean of
+exactly the 54 terms of OEIS A120384 (Alexis Monnerot-Dumaine, 2006, with a table of all 54 terms by
+Ken Takusagawa: primes at which the geometric mean of
 the two neighbouring gaps sets a record, which is the same event as a record product), term for
 term, ending at 31587561361; `table.md` lists the last twelve. So the record sequence below 10^11
 was already in the OEIS, and this folder confirms it. Above 10^11 only the maximum of each segment

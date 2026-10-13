@@ -52,6 +52,10 @@ replacement values do divide (own check). Say so plainly, since this corrects an
 attribute them to Sharvil Kesarwani: results.md wrongly says "the n = 34, 35 witnesses KentaKitamura quoted" and
 calls them "not minimal even as witnesses".
 
+Correction (12 Oct 2026): "N + n - 1 instead of N - n + 1" above fits n = 34 only. Both posted values correspond
+to N = n + k - 1 = 20021368432952165 rather than to N = 20021368432952099, so each is 66 too large; the README
+and the live forum comment state it this way.
+
 E5 (MINOR, editorial, oeis-extension.txt). The live A375071 entry's %E line reads "a(19)-a(27) from Sharvil
 Kesarwani, Mar 30 2026" but the data field ends at a(26) (27 terms, no b-file). Bhavik Mehta's line "a(10)-a(18)"
 likewise disagrees with the problem page's "1 <= n <= 18" (= a(0)..a(17)). Tell the editor the existing credit
