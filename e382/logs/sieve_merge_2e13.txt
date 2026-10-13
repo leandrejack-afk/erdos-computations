@@ -1,0 +1,10 @@
+sieve covers run starts in [1, 20000000000001) without gaps, from 79 complete pieces
+square points counted by the sieve: 1773455323
+cand_2e13_min10.txt: 182 runs of length >= 10 start in the covered range; identical to the sieve: True
+cand2_2e13_min10.txt: 182 runs of length >= 10 start in the covered range; identical to the sieve: True
+FIRST len 9 start 75047565 count 336
+FIRST len 10 start 4928180396 count 123
+FIRST len 11 start 40533366231 count 39
+FIRST len 12 start 111460496439 count 12
+FIRST len 13 start 436502026483 count 7
+FIRST len 14 start 17952448643078 count 1

@@ -130,9 +130,11 @@ answer. Two further checks do not use it:
   same 1,773,455,323 square points (`logs/cand_2e13_min10.txt`, `logs/cand2_2e13_min10.txt`).
 - Up to 2 x 10^14, `cand.c` and `cand2.c` list the same 616 runs of length at least 10 and count the
   same 10,116,434,980 square points (`logs/cand_2e14_min10.txt`, `logs/cand2_2e14_min10.txt`).
-- `sieve.c` is running over (5 x 10^11, 2 x 10^13] in 78 pieces (`logs/sieve-chunks/`,
-  `merge_sieve.py` compares them with the enumerations); every finished piece lists exactly the runs
-  of the two enumerations. This check is not finished and nothing above relies on it.
+- `sieve.c` was also run over (5 x 10^11, 2 x 10^13], in 78 pieces (`logs/sieve-chunks/`). Together
+  with `logs/sieve_5e11.txt` it lists exactly the same 182 runs of length at least 10 below
+  2 x 10^13 as `cand.c` and `cand2.c`, and counts the same 1,773,455,323 square points
+  (`merge_sieve.py`, output in `logs/sieve_merge_2e13.txt`). So all three programs agree up to
+  2 x 10^13.
 - `direct.c` finds exactly the same runs as `cand.c` below 4928180500 (a(9)), below 40533366300
   (a(10)) and below 436502026500 (a(11) and a(12)), with the same first run and count for every run
   length and the same number of square points, 101,506,569 at the last bound, and no flags
@@ -189,5 +191,5 @@ enumerations, and `direct.c` does not use the reduction), not in authorship.
     gp -q check_runs.gp
     ./check_small.sh
 
-Runs made 11 and 12 Oct 2026 on an Apple M5 laptop. Programs written and run with the assistance of
+Runs made 11 to 13 Oct 2026 on an Apple M5 laptop. Programs written and run with the assistance of
 a large language model; every number above comes from the executed runs.
