@@ -1,0 +1,2 @@
+jumps: 56; closed with the right t: 56; missing: []
+b(n) - b(n-1) in {0,1}: True; upper bound carried to every n <= 300: True

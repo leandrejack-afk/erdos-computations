@@ -1,0 +1,13 @@
+N=300: 44892 distinct sums of pairs x<=y, 258 sums with >= 2 representations
+  collisions involving some x = y: 0
+  colliding representation pairs sharing an element: 0
+  same 4-set from two different collisions: 0
+  largest number of representations: 2
+  conflicting 4-sets with max <= 12: 1
+  conflicting 4-sets with max <= 50: 12
+  conflicting 4-sets with max <= 100: 45
+  conflicting 4-sets with max <= 120: 63
+  conflicting 4-sets with max <= 150: 80
+  conflicting 4-sets with max <= 200: 136
+  conflicting 4-sets with max <= 250: 199
+  conflicting 4-sets with max <= 300: 258

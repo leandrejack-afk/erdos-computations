@@ -1,0 +1,5 @@
+highs n=120 a=100 b-file=100 AGREE status=Optimization terminated successfully bound=100.0 witness_sidon=True groups=63 time=0.9s
+highs n=150 a=126 b-file=126 AGREE status=Optimization terminated successfully bound=126.0 witness_sidon=True groups=80 time=0.5s
+highs n=200 a=166 b-file=166 AGREE status=Optimization terminated successfully bound=166.0 witness_sidon=True groups=136 time=2.0s
+highs n=250 a=204 b-file=204 AGREE status=Optimization terminated successfully bound=204.0 witness_sidon=True groups=199 time=5.2s
+highs n=300 a=244 b-file=244 AGREE status=Optimization terminated successfully bound=244.0 witness_sidon=True groups=258 time=23.7s
