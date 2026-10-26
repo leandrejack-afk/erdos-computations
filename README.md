@@ -20,4 +20,4 @@ README with the result and how it was independently verified.
   below X, for X up to 10^13.
 - `e1206/`: Erdős Problem 1206, the size of the largest subset of {1, ..., n} whose cubes form a Sidon set,
   for every n up to 300 (exact: each lower bound by an explicit set, each upper bound by a branch and bound
-  checked in exact arithmetic).
+  checked in exact arithmetic), and the same with n^3 required in the set.

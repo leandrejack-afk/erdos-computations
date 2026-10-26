@@ -1,0 +1,2 @@
+checked n = 1..300: every complement of a logged removal set contains n, is Sidon by direct pair sums and has size c(n): problems = 0
+c(n) < a(n) at n = [80, 108, 156, 238] with a(n) - c(n) = [1, 1, 1, 1]

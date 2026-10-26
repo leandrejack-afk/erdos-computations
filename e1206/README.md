@@ -69,15 +69,43 @@ is optimal.
    n <= 54, its own exact branch and bound for n <= 196, SAT proofs checked by drat-trim at the 22
    values of n up to 134 with a(n) = a(n - 1), and HiGHS on a different model at five values of n.
 
+## Sets that must contain n^3
+
+An OEIS editor asked about the variant c(n), the size of a largest Sidon subset of the first n
+cubes that contains n^3. It carries more information, since a(n) = max(c(1), ..., c(n)). For every
+n <= 300, c(n) = a(n), except at n = 80, 108, 156 and 238, where c(n) = a(n) - 1. All values are in
+`contain1206.txt` ("n c(n)").
+
+1. `contain_ilp.py` computes c(n) at every n with HiGHS, with n fixed as kept, and logs a removal
+   set for every n (`contain_ilp.err`).
+2. Lower bound. `check_contain.py` removes each logged set from {1, ..., n} and checks from the
+   definition that what remains contains n, is a Sidon set (all pair sums, x = y included, exact
+   integers) and has c(n) elements (`check_contain.log`).
+3. Upper bound. c(n) <= a(n) always, so where c(n) = a(n) the bound is the certified one above. At
+   the four exceptions, `exact_bb_contain.py` (`exact_bb.py` with n fixed as kept from the start)
+   proves that no Sidon subset containing n^3 has a(n) elements, and as a control finds one with
+   a(n) - 1 elements (`exact_bb_contain.log`). `contain_certify.sh` proves two of these bounds
+   (n = 80, 108) a second way: the CNF of `review/make_cnf.py` plus the unit clause "n is in the
+   set" is unsatisfiable for a(n) elements (kissat, with the proof checked by drat-trim:
+   "s VERIFIED") and satisfiable for a(n) - 1, with the model checked from the definition
+   (`contain_certify.log`). At n = 156 and 238 this SAT route is too slow (kissat had not finished
+   n = 156 after 6 minutes; the review's SAT proofs for a(n) stopped at n = 134), so those two
+   bounds rest on the branch and bound, with the HiGHS and CP-SAT values (steps 1 and 4) agreeing.
+4. `contain_cpsat.py` recomputes c(n) from scratch at every n with OR-tools CP-SAT, finding the
+   4-sets by dictionary lookup instead of sorting, and agrees at all 300 values (`contain_cpsat.txt`).
+
 ## Files
 
 Programs: `sidon_cpsat.py`, `exact_bb.py`, `combine.py`, `check_witnesses.py`, `verify_sets.py`,
-`check_doubles.py`, `sidon_ilp.py`, `sidon_sat.py`, `sidon_maxsat.py`.
+`check_doubles.py`, `sidon_ilp.py`, `sidon_sat.py`, `sidon_maxsat.py`; for c(n), `contain_ilp.py`,
+`check_contain.py`, `exact_bb_contain.py`, `contain_certify.sh`, `contain_cpsat.py`.
 
 Results and logs: `b1206.txt` ("n a(n)", n = 1..300), `c300.txt` and `c300.err` (the CP-SAT values
 and deletion sets), `exact_bb.log`, `combine.log`, `check_witnesses.log`, `verify_sets.log`,
-`check_doubles.log`, `i300.txt` and `i300.err`, `s300.txt`, `maxsat.log`. The review's programs and
-logs are in `review/`.
+`check_doubles.log`, `i300.txt` and `i300.err`, `s300.txt`, `maxsat.log`; for c(n),
+`contain1206.txt` ("n c(n)", n = 1..300), `contain_ilp.err`, `check_contain.log`,
+`exact_bb_contain.log`, `contain_certify.log`, `contain_cpsat.txt`. The review's programs and logs
+are in `review/`.
 
 Python 3 with numpy, scipy, highspy, ortools and python-sat. These programs were written with the
 assistance of a large language model; the results rest on the checks listed above.

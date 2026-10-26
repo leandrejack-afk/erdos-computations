@@ -1,0 +1,2 @@
+n=80 c=67 | K=68 kissat_exit=20 drat-trim: s VERIFIED  solve=0s check=1s | K=67 kissat_exit=10 n=80 K=67: |A|=67 sidon=yes OK contains n
+n=108 c=89 | K=90 kissat_exit=20 drat-trim: s VERIFIED  solve=51s check=57s | K=89 kissat_exit=10 n=108 K=89: |A|=89 sidon=yes OK contains n

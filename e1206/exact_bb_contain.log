@@ -1,0 +1,12 @@
+n=80 t=13 keep=80 collisions=31: CLOSED: no Sidon subset containing n^3 of size 68 nodes=31 leaves(a)=1 leaves(b)=15 lps=30 maxdepth=5 time=0.0s
+OPEN witness: 13 removals [8, 10, 12, 15, 17, 18, 30, 34, 48, 58, 60, 66, 69]
+n=80 t=14 keep=80 collisions=31: OPEN: found a Sidon subset containing n^3 with t-1 removals nodes=8 leaves(a)=0 leaves(b)=0 lps=7 maxdepth=7 time=0.0s
+n=108 t=19 keep=108 collisions=53: CLOSED: no Sidon subset containing n^3 of size 90 nodes=275 leaves(a)=2 leaves(b)=136 lps=273 maxdepth=12 time=0.1s
+OPEN witness: 19 removals [8, 9, 12, 15, 17, 18, 27, 45, 48, 58, 60, 63, 64, 66, 69, 72, 86, 92, 96]
+n=108 t=20 keep=108 collisions=53: OPEN: found a Sidon subset containing n^3 with t-1 removals nodes=15 leaves(a)=0 leaves(b)=0 lps=14 maxdepth=14 time=0.0s
+n=156 t=26 keep=156 collisions=88: CLOSED: no Sidon subset containing n^3 of size 131 nodes=45 leaves(a)=0 leaves(b)=23 lps=45 maxdepth=13 time=0.0s
+OPEN witness: 26 removals [1, 2, 4, 6, 10, 33, 36, 42, 48, 50, 51, 54, 58, 60, 63, 66, 72, 76, 90, 92, 110, 116, 117, 122, 123, 144]
+n=156 t=27 keep=156 collisions=88: OPEN: found a Sidon subset containing n^3 with t-1 removals nodes=18 leaves(a)=0 leaves(b)=0 lps=17 maxdepth=17 time=0.0s
+n=238 t=45 keep=238 collisions=183: CLOSED: no Sidon subset containing n^3 of size 194 nodes=43895 leaves(a)=7 leaves(b)=21941 lps=43888 maxdepth=35 time=75.4s
+OPEN witness: 45 removals [2, 4, 9, 10, 14, 24, 26, 30, 32, 40, 47, 48, 50, 51, 54, 60, 64, 69, 72, 76, 84, 92, 93, 94, 96, 99, 100, 114, 120, 121, 134, 135, 146, 150, 156, 165, 168, 174, 180, 184, 192, 204, 210, 228, 231]
+n=238 t=46 keep=238 collisions=183: OPEN: found a Sidon subset containing n^3 with t-1 removals nodes=72 leaves(a)=2 leaves(b)=18 lps=69 maxdepth=33 time=0.1s
