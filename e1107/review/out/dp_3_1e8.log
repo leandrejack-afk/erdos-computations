@@ -1,0 +1,10 @@
+r=3 N=100000000: 1645 coins <= N (largest 100000000), list has 1645 (largest 100000000)
+exceptions in [1, N]: 45, largest 2039 (min summands 5)
+min-summand histogram over [0, N]: 0:1 1:1645 2:1101293 3:90526477 4:8370540 5:35 6:5 7:3 8:2
+largest n <= N with min summands 2: 99999846
+largest n <= N with min summands 3: 99999999
+largest n <= N with min summands 4: 99999988
+largest n <= N with min summands 5: 2039
+real 11.57
+user 8.47
+sys 0.02

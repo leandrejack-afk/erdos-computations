@@ -1,0 +1,4 @@
+r=4 N=10000000000 P=316 primes=65: 1741 r-full, largest 10000000000
+real 93.21
+user 83.35
+sys 0.17

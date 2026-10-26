@@ -1,0 +1,4 @@
+r=5 N=1000000000 P=63 primes=18: 375 r-full, largest 1000000000
+real 6.41
+user 6.15
+sys 0.01

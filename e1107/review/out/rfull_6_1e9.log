@@ -1,0 +1,4 @@
+r=6 N=1000000000 P=31 primes=11: 206 r-full, largest 1000000000
+real 6.12
+user 5.97
+sys 0.01

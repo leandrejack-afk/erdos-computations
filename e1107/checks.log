@@ -1,0 +1,8 @@
+# Checks run on 26 Oct 2026 (ARM macOS, clang); each line: command, then result
+sumfull 2 1000000: 6 exceptions in [1, N], largest 119; list: 7 15 23 87 111 119 (A056828: 7 15 23 87 111 119)
+sumfull 3 1000000: 45 exceptions in [1, N], largest 2039; first and last: 5 ... 2039 (A392342: 45 terms, the last 2039)
+sumfull 4 1000000000 vs sum4full 1000000000: identical
+check_np.py 100000000 (r = 4) vs the r = 4 list below 10^8: IDENTICAL
+check_np.py 20000000 5 vs the r = 5 list below 2*10^7: IDENTICAL
+check_np.py 20000000 6 vs the r = 6 list below 2*10^7: IDENTICAL
+10^10 lists (server/) vs 10^9 lists: all three identical

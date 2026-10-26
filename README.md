@@ -11,6 +11,9 @@ README with the result and how it was independently verified.
   the sequence in Problem 430 is entirely prime).
 - `e389/`: Erdős Problem 389, the least k for n = 28 and n = 29 (exact, extending OEIS A375071), upper bounds
   for n = 30 to 35 and a correction to two posted witnesses.
+- `e1107/`: Erdős Problem 1107, the integers up to 10^10 that are not a sum of at most r + 1 r-full
+  numbers, for r = 4 (the complete list of OEIS A392343 below 10^10: 1318 numbers, the last 150271),
+  r = 5 (6018, the last 449560) and r = 6 (37036, the last 4034495).
 - `e1109/`: Erdős Problem 1109, exact values of f(N) for N <= 3000 (extending OEIS A392164 and A392165 from
   N = 1103), with every record boundary re-proved by two further programs.
 - `e1137/`: Erdős Problem 1137, the largest gap and the largest product of two consecutive gaps between primes

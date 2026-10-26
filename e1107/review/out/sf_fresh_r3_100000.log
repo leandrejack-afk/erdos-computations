@@ -1,0 +1,2 @@
+r=3 N=100000: 129 r-full numbers, largest 100000
+45 exceptions in [1, N], largest 2039

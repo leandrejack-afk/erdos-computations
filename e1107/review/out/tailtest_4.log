@@ -1,0 +1,8 @@
+r=4 N=100000: 57 coins <= N (largest 100000), list has 906 (largest 1000000000)
+exceptions in [1, N]: 1316, largest 81263 (min summands 6)
+min-summand histogram over [0, N]: 0:1 1:57 2:1291 3:14642 4:56204 5:26490 6:910 7:84 8:57 9:46 10:45 11:45 12:42 13:31 14:27 15:16 16:12 17:1
+largest n <= N with min summands 3: 99995
+largest n <= N with min summands 4: 99999
+largest n <= N with min summands 5: 99992
+largest n <= N with min summands 6: 81263
+tail (100000, 1000000]: 1 segments, 10683 not covered by F + S_r, 2 unresolved after F + F + S_{r-1}
